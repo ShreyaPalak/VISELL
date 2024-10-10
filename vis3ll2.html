@@ -1,0 +1,1787 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta content="0.1.31" name="version" />
+    <link rel="canonical" href="https://senpai.tv/" />
+
+    <title>VISELL</title>
+    <link rel="stylesheet" href="styles.css">
+    
+
+
+
+<!-- Meta Information -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Information -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ViSell - A student second-hand e-commerce website. Find and sell used products within the VIT Vellore community." />
+  <meta property="og:site_name" content="ViSell">
+  <meta property="og:url" content="https://visell.com/">
+  <meta property="og:title" content="ViSell">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="ViSell - A student second-hand e-commerce website. Find and sell used products within the VIT Vellore community." />
+  <meta property="og:image" content="https://example.com/path-to-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ViSell">
+  <meta name="twitter:description" content="ViSell - A student second-hand e-commerce website." />
+  <meta name="twitter:image" content="https://example.com/path-to-image.jpg" />
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="https://example.com/favicon-96x96.png" sizes="96x96" type="image/png" />
+  <link rel="apple-touch-icon" href="https://example.com/apple-icon-180x180.png" sizes="180x180" type="image/png" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://themes.fourthwall.com/themes-library/assets/10904437-9bc2-4971-a129-aceb423943aa/assets/vendor.css" media="all" />
+  <link rel="stylesheet" href="https://themes.fourthwall.com/themes/assets/eb9eb0ad-3a21-4430-b05a-3c98c6161500/assets/styles/theme.scss.css" media="all" />
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://imgproxy.fourthwall.com" crossorigin>
+  <link rel="preconnect" href="https://storage.googleapis.com" crossorigin>
+
+  <!-- Scripts -->
+  <script src="https://js.stripe.com/v3/" defer></script>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w, d, s, l, i){
+      w[l] = w[l] || [];
+      w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+      var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true; j.src = '/_c/mtg.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PV2BBNN');
+  </script>
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ViSell",
+    "description": "ViSell - A student second-hand e-commerce website. Buy and sell used products within the VIT Vellore student community.",
+    "url": "https://visell.com",
+    "logo": "https://example.com/logo.png",
+    "sameAs": [
+      "https://facebook.com/visell",
+      "https://twitter.com/visell",
+      "https://instagram.com/visell"
+    ]
+  }
+  </script>
+
+  <!-- Theme color -->
+  <meta name="theme-color" content="#262626" />
+
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    /* Compact Navigation Bar */
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .navbar a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 600px) {
+      .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#categories">Categories</a>
+    <a href="#cart">Cart</a>
+    <a href="#contact">Contact Us</a>
+  </div>
+
+  <!-- Page Content -->
+  <div class="content">
+    <h1>Welcome to ViSell</h1>
+    <p>ViSell is a student-driven second-hand e-commerce platform at VIT Vellore. Buy and sell used items conveniently within the community.</p>
+  </div>
+
+  <!-- Footer (Optional) -->
+  <footer>
+    <p>© 2024 ViSell. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.fourthwall.com/web-perf/instant.js" defer></script>
+
+</body>
+</html>
+
+  </head>
+
+  
+  
+
+  
+
+  <body class="body">
+    <header>
+      <nav class="navbar">
+          <div class="logo">ViSell</div>
+          <ul class="nav-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Categories</a></li>
+              <li><a href="#">Cart</a></li>
+              <li><a href="#">Essentials</a></li>
+          </ul>
+      </nav>
+  </header>
+ <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src='/_c/ns.html?id=GTM-PV2BBNN'
+height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <!-- ie info bar -->
+<div class="browser-ie11" style="display: none">
+  Your current browser is not supported. Please
+  <a href="https://browsehappy.com/" target="_blank" rel="nofollow" nofollow
+    >upgrade to a newer one</a
+  >
+  to improve your experience with this site
+</div>
+
+<!-- ie 11 polyfills -->
+<!-- TODO: Move to external JS file -->
+<script type="text/javascript">
+  if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+    document.write(
+      '<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"><\/script>'
+    );
+    document.write(
+      '<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.6.9/core.min.js"><\/script>'
+    );
+    document.write(
+      '<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js"><\/script>'
+    );
+
+    // show info bar
+    document.querySelector(".browser-ie11").style.display = "block";
+
+    // createEvent polyfill
+    (function() {
+      if (typeof window.CustomEvent === "function") return false;
+
+      function CustomEvent(event, params) {
+        params = params || {
+          bubbles: false,
+          cancelable: false,
+          detail: undefined
+        };
+        var evt = document.createEvent("CustomEvent");
+        evt.initCustomEvent(
+          event,
+          params.bubbles,
+          params.cancelable,
+          params.detail
+        );
+        return evt;
+      }
+
+      CustomEvent.prototype = window.Event.prototype;
+      window.CustomEvent = CustomEvent;
+    })();
+  }
+</script>
+
+    <div class="page">
+      
+
+      <div class="page__main">
+        <div class="main">
+  <div data-testid="main.sections" class="main__sections">
+    <div id="fw-section-hero-slider-custom-1702724207" class="fw-section"><section class="hero-slider">
+  <div class="">
+    <div class="hero-slider__main">
+      <div class="hero-slider__slider" data-hero-slider="slider">
+        
+          
+          
+          
+          
+          
+          
+          
+          
+
+          <div class="hero-slider__slide">
+            <div class="hero-slider__gallery">
+               <div class="tile__image">
+                <div  class="image image--hero-slider">
+                  
+
+                    <div class="image__object">
+                      <div class="hero-slider__image-overlay"></div>
+                      <img src="logo.jpg" />
+                      
+                    </div>
+
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+
+          <div class="hero-slider__slide">
+            <div class="hero-slider__gallery">
+               <div class="tile__image">
+                <div  class="image image--hero-slider">
+
+                    <div class="image__object">
+                      <div class="hero-slider__image-overlay"></div>
+                      <img src="1.jpeg "width="100" />
+
+                    </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+
+          <div class="hero-slider__slide">
+            <div class="hero-slider__gallery">
+               <div class="tile__image">
+                <div  class="image image--hero-slider">
+                  
+                  
+                    <a href="" target="_blank">
+                  
+
+                    <div class="image__object">
+                      <div class="hero-slider__image-overlay"></div>
+                      <img src="https://www.newszii.com/wp-content/uploads/2018/07/Best-Tech-Product-Every-Student.jpg" />
+                      
+                    </div>
+
+                  
+                    </a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+
+          <div class="hero-slider__slide">
+            <div class="hero-slider__gallery">
+               <div class="tile__image">
+                <div  class="image image--hero-slider">
+                  /collections/all
+                  
+                    <a href="/collections/all" target="_blank">
+                  
+
+                    <div class="image__object">
+                      <div class="hero-slider__image-overlay"></div>
+                      <img src="https://www.studentsshop.co.in/_next/image?url=https://cdn.dotpe.in/kiranaStatic/Premium_Images/Art%2520%2526%2520Craft/Art%2520Craft%2520Web/JPEG/wgth1.jpg&w=1920&q=75" />
+                      
+                    </div>
+
+                  
+                    </a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+
+    <div class="hero-slider__nav-container">
+      <div class="hero-slider__nav" data-hero-slider="nav">
+        
+          
+          
+
+          <div class="hero-slider__nav-item" data-hero-thumbnail>
+            <img 
+              src="logo.jpg"
+              alt=""
+            >
+            <div class="hero-slider__nav-item-button" data-hero-autoplay-toggle></div>
+          </div>
+        
+          
+          
+
+          <div class="hero-slider__nav-item" data-hero-thumbnail>
+            <img 
+              src="1.jpeg" width="100"
+              alt=""
+            >
+            <div class="hero-slider__nav-item-button" data-hero-autoplay-toggle></div>
+          </div>
+        
+          
+          
+
+          <div class="hero-slider__nav-item" data-hero-thumbnail>
+            <img 
+              src="https://www.newszii.com/wp-content/uploads/2018/07/Best-Tech-Product-Every-Student.jpg"
+              alt=""
+            >
+            <div class="hero-slider__nav-item-button" data-hero-autoplay-toggle></div>
+          </div>
+        
+          
+          
+
+          <div class="hero-slider__nav-item" data-hero-thumbnail>
+            <img 
+              src="https://www.studentsshop.co.in/_next/image?url=https%3A%2F%2Fcdn.dotpe.in%2FkiranaStatic%2FPremium_Images%2FArt%2520%2526%2520Craft%2FArt%2520Craft%2520Web%2FJPEG%2Fwgth1.jpg&w=1920&q=75"
+              alt=""
+            >
+            <div class="hero-slider__nav-item-button" data-hero-autoplay-toggle></div>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <button class="hero-slider__button-autoplay" data-hero-autoplay>toggle slider</button>
+  </div>
+</section>
+
+</div><div id="fw-section-featured-collection-1711992078" class="fw-section">
+
+<section data-section-id="fw-section-featured-collection-1711992078" data-testid="main.single.section" class="featured-collection featured-collection--fw-section-featured-collection-1711992078">
+  <div class="collection">
+    <div class="container wrapper">
+      <div class="collection__header">
+        <div class="section-header">
+          
+            <h2 class="section-header__heading">V</h2>
+          
+
+          
+            <div class="section-header__cta">
+              <a href="" class="button button--outline button--small">
+                All Essentials
+              </a>
+            </div>
+          
+        </div>
+      </div>
+
+      <div class="collection__grid">
+        <div class="grid grid--waffle grid--center">
+          
+            <div class="grid__column grid__column--6 grid__column--3@md">
+              
+
+
+
+
+
+
+
+
+<div data-testid="product" class="product-tile">
+  <a href="/products/cartographer-abyss" class="tile">
+    <div class="tile__image">
+      <div class="image image--background-color">
+        <div class="image__badges">
+          
+            
+          
+
+          
+        </div>
+
+        <div class="image__object">
+          
+            <img
+              src="2.webp"
+              alt="Cartographer - Abyss product image (1)"
+            >
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="tile__description">
+      <h3 class="tile__heading">
+        Cartographer - Abyss
+      </h3>
+
+      <p class="tile__prices">
+        
+
+        <span class="tile__price tile__price--original">
+          $29.00
+        </span>
+      </p>
+    </div>
+  </a>
+</div>
+
+            </div>
+          
+            <div class="grid__column grid__column--6 grid__column--3@md">
+              
+
+
+
+
+
+
+
+
+<div data-testid="product" class="product-tile">
+  <a href="/products/cartographer-ghost" class="tile">
+    <div class="tile__image">
+      <div class="image image--background-color">
+        <div class="image__badges">
+          
+            
+          
+
+          
+        </div>
+
+        <div class="image__object">
+          
+            <img
+              src="4.webp"
+              alt="Cartographer - Ghost product image (1)"
+            >
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="tile__description">
+      <h3 class="tile__heading">
+        Cartographer - Ghost
+      </h3>
+
+      <p class="tile__prices">
+        
+
+        <span class="tile__price tile__price--original">
+          $29.00
+        </span>
+      </p>
+    </div>
+  </a>
+</div>
+
+            </div>
+          
+            <div class="grid__column grid__column--6 grid__column--3@md">
+              
+
+
+
+
+
+
+
+
+<div data-testid="product" class="product-tile">
+  <a href="/products/sunrise" class="tile">
+    <div class="tile__image">
+      <div class="image image--background-color">
+        <div class="image__badges">
+          
+            
+          
+
+          
+        </div>
+
+        <div class="image__object">
+          
+            <img
+              src="10.jpeg"
+              alt="Sunrise product image (1)"
+            >
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="tile__description">
+      <h3 class="tile__heading">
+        Sunrise
+      </h3>
+
+      <p class="tile__prices">
+        
+
+        <span class="tile__price tile__price--original">
+          $29.00
+        </span>
+      </p>
+    </div>
+  </a>
+</div>
+
+            </div>
+          
+            <div class="grid__column grid__column--6 grid__column--3@md">
+              
+
+
+
+
+
+
+
+
+<div data-testid="product" class="product-tile">
+  <a href="/products/garden" class="tile">
+    <div class="tile__image">
+      <div class="image image--background-color">
+        <div class="image__badges">
+          
+            
+          
+
+          
+        </div>
+
+        <div class="image__object">
+          
+            <img
+              src="7.jpeg"
+              alt="Garden product image (1)"
+            >
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="tile__description">
+      <h3 class="tile__heading">
+        Garden
+      </h3>
+
+      <p class="tile__prices">
+        
+
+        <span class="tile__price tile__price--original">
+          $29.00
+        </span>
+      </p>
+    </div>
+  </a>
+</div>
+
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+</div><div id="fw-section-featured-collection-0" class="fw-section">
+
+<section data-section-id="fw-section-featured-collection-0" data-testid="main.single.section" class="featured-collection featured-collection--fw-section-featured-collection-0">
+  <div class="collection">
+    <div class="container wrapper">
+      <div class="collection__header">
+        <div class="section-header">
+          
+            <h2 class="section-header__heading">THE COLLECTION</h2>
+          
+
+          
+        </div>
+      </div>
+
+      <div class="collection__grid">
+        <div class="grid grid--waffle grid--center">
+          
+            <div class="grid__column grid__column--6 grid__column--3@md">
+              
+
+
+
+
+
+
+
+
+<div data-testid="product" class="product-tile">
+  <a href="/products/the-vetruvian-waifu-sweatshirt" class="tile">
+    <div class="tile__image">
+      <div class="image image--background-color">
+        <div class="image__badges">
+          
+            
+          
+
+          
+        </div>
+
+        <div class="image__object">
+          
+            <img
+              src="5.jpeg"
+              alt="The Vetruvian Waifu Sweatshirt product image (1)"
+            >
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="tile__description">
+      <h3 class="tile__heading">
+        Stick Files
+      </h3>
+
+      <p class="tile__prices">
+        
+
+        <span class="tile__price tile__price--original">
+          $45.00
+        </span>
+      </p>
+    </div>
+  </a>
+</div>
+
+            </div>
+          
+            <div class="grid__column grid__column--6 grid__column--3@md">
+              
+
+
+
+
+
+
+
+
+<div data-testid="product" class="product-tile">
+  <a href="/products/the-vetruvian-waifu-long-sleeve" class="tile">
+    <div class="tile__image">
+      <div class="image image--background-color">
+        <div class="image__badges">
+          
+            
+          
+
+          
+        </div>
+
+        <div class="image__object">
+          
+            <img
+              src="3.webp"
+              alt="The Vetruvian Waifu Long Sleeve product image (1)"
+            >
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="tile__description">
+      <h3 class="tile__heading">
+        The Vetruvian Waifu Long Sleeve
+      </h3>
+
+      <p class="tile__prices">
+        
+
+        <span class="tile__price tile__price--original">
+          $29.00
+        </span>
+      </p>
+    </div>
+  </a>
+</div>
+
+            </div>
+          
+            <div class="grid__column grid__column--6 grid__column--3@md">
+              
+
+
+
+
+
+
+
+
+<div data-testid="product" class="product-tile">
+  <a href="/products/idiot-beanie" class="tile">
+    <div class="tile__image">
+      <div class="image image--background-color">
+        <div class="image__badges">
+          
+            
+          
+
+          
+        </div>
+
+        <div class="image__object">
+          
+            <img
+              src="2.jpeg"
+              alt="Idiot Waffle Beanie product image (1)"
+            >
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="tile__description">
+      <h3 class="tile__heading">
+        Idiot Waffle Beanie
+      </h3>
+
+      <p class="tile__prices">
+        
+
+        <span class="tile__price tile__price--original">
+          $25.00
+        </span>
+      </p>
+    </div>
+  </a>
+</div>
+
+            </div>
+          
+            <div class="grid__column grid__column--6 grid__column--3@md">
+              
+
+
+
+
+
+
+
+
+<div data-testid="product" class="product-tile">
+  <a href="/products/genius-beanie-2" class="tile">
+    <div class="tile__image">
+      <div class="image image--background-color">
+        <div class="image__badges">
+          
+            
+          
+
+          
+        </div>
+
+        <div class="image__object">
+          
+            <img
+              src="1.jpeg" width="100"
+              
+            >
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="tile__description">
+      <h3 class="tile__heading">
+        Genius Waffle Beanie
+      </h3>
+
+      <p class="tile__prices">
+        
+
+        <span class="tile__price tile__price--original">
+          $25.00
+        </span>
+      </p>
+    </div>
+  </a>
+</div>
+
+            </div>
+          
+            <div class="grid__column grid__column--6 grid__column--3@md">
+              
+
+
+
+
+
+
+
+
+<div data-testid="product" class="product-tile">
+  <a href="" class="tile">
+    <div class="tile__image">
+      <div class="image image--background-color">
+        <div class="image__badges">
+          
+            
+          
+
+          
+        </div>
+
+        <div class="image__object">
+          
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnwlcSONZ2bljriWN5mqaFOWM43qV0UYirAw&s"
+              alt="Notice Me Senpai Hoodie product image (1)"
+            >
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="tile__description">
+      <h3 class="tile__heading">
+        Notice Me Senpai Hoodie
+      </h3>
+
+      <p class="tile__prices">
+        
+
+        <span class="tile__price tile__price--original">
+          $49.00
+        </span>
+      </p>
+    </div>
+  </a>
+</div>
+
+            </div>
+          
+            <div class="grid__column grid__column--6 grid__column--3@md">
+              
+
+
+
+
+
+
+
+
+<div data-testid="product" class="product-tile">
+  <a href="/products/notice-me-tee" class="tile">
+    <div class="tile__image">
+      <div class="image image--background-color">
+        <div class="image__badges">
+          
+            
+          
+
+          
+        </div>
+
+        <div class="image__object">
+          
+            <img
+              src="https://imgproxy.fourthwall.com/Cav3gcD_ZSSwNpcrmRyy_AARFijkPTg9zyDwMVvTCV8/w:720/sm:1/enc/MWE0NDljMDQ1NWYw/NDg2Y3K67nCZ8zlc/x-AVdY6HKrK0iVjc/2j58uLbtjh1y7cud/5sJOfBV2chUON33h/IzanmTO4H9-2jsPF/li-RTOP5FAQlmcaE/Gqz-uAl5hcffRZpy/ZXZPy79QXSYGQzGn/Yxb-HnuVCxlk04I9/C6Z2eQxGHpXoI3hs/I3U5EU5yzTeqLI95/YL9RhgvcN5iOK-DN/4UmJUg.webp"
+              alt="Notice Me Senpai Tee product image (1)"
+            >
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="tile__description">
+      <h3 class="tile__heading">
+        Notice Me Senpai Tee
+      </h3>
+
+      <p class="tile__prices">
+        
+
+        <span class="tile__price tile__price--original">
+          $29.00
+        </span>
+      </p>
+    </div>
+  </a>
+</div>
+
+            </div>
+          
+            <div class="grid__column grid__column--6 grid__column--3@md">
+              
+
+
+
+
+
+
+
+
+<div data-testid="product" class="product-tile">
+  <a href="/products/notice-me-hoodie-uwu-edition" class="tile">
+    <div class="tile__image">
+      <div class="image image--background-color">
+        <div class="image__badges">
+          
+            
+          
+
+          
+        </div>
+
+        <div class="image__object">
+          
+            <img
+              src="https://imgproxy.fourthwall.com/hOEUcYiTZHX8zxOJcetwCtHbfdzAafkLn4G1Jd7KpEs/w:720/sm:1/enc/YWJjYWQwYzY4NGVm/MDRiOFSdus3MkrIx/AI9b1a9g7S_eOR0I/qKSvmOD2Z9XVVJqD/VOWWv-p9t-G6_D_M/DBoRINqKcPAlmFp4/Sr3DZ6fkiEsxW1xq/h0t4b7UqsmVULQya/i6KLVz5F7x5JEX9u/MANejggMtrrHH46n/fAsvehgf29IlKnOF/eQZMBslsyz7_G4tk/rkLQrjcPm0gNW8TH/Mflpuw.webp"
+              alt="Notice Me Senpai Hoodie - UWU Edition (Limited) product image (1)"
+            >
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="tile__description">
+      <h3 class="tile__heading">
+        Notice Me Senpai Hoodie - UWU Edition (Limited)
+      </h3>
+
+      <p class="tile__prices">
+        
+
+        <span class="tile__price tile__price--original">
+          $59.00
+        </span>
+      </p>
+    </div>
+  </a>
+</div>
+
+            </div>
+          
+            <div class="grid__column grid__column--6 grid__column--3@md">
+              
+
+
+
+
+
+
+
+
+<div data-testid="product" class="product-tile">
+  <a href="/products/streambeats-embroidered-hoodie" class="tile">
+    <div class="tile__image">
+      <div class="image image--background-color">
+        <div class="image__badges">
+          
+            
+          
+
+          
+        </div>
+
+        <div class="image__object">
+          
+            <img
+              src="https://imgproxy.fourthwall.com/WQfpDQ32RdNV7hBC5qLY3zGYTlalsIGpzb9Aa3T1Gfc/w:720/sm:1/enc/OTU1M2RmYzBmMDVh/YWFkY6Ga2dlx5mFV/F4_8G_2osuQ8bwgY/lBvcxeFUhlJIm_2b/L2EWYj9k3cphwbcp/EXr_4033MYkvcqeb/CZIbzhTbqODIUiOd/Edf3tbXnqlGpNqv_/tCCRWm9QX_ohuHc9/RE1LQ2f0bkXb_Hu2/OUD7Slqd1huPUz80/ruHRz9br0X4Bf1qc/o-Hn7ii28lT2klh5/Saqbww.webp"
+              alt="StreamBeats Embroidered Hoodie product image (1)"
+            >
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="tile__description">
+      <h3 class="tile__heading">
+        StreamBeats Embroidered Hoodie
+      </h3>
+
+      <p class="tile__prices">
+        
+
+        <span class="tile__price tile__price--original">
+          $59.00
+        </span>
+      </p>
+    </div>
+  </a>
+</div>
+
+            </div>
+          
+            <div class="grid__column grid__column--6 grid__column--3@md">
+              
+
+
+
+
+
+
+
+
+<div data-testid="product" class="product-tile">
+  <a href="/products/streambeats-embroidered-tee" class="tile">
+    <div class="tile__image">
+      <div class="image image--background-color">
+        <div class="image__badges">
+          
+            
+          
+
+          
+        </div>
+
+        <div class="image__object">
+          
+            <img
+              src="https://imgproxy.fourthwall.com/GzZl2Zko64eAbt3_78VEt33UxpB1fYmXpw_Mbfy7NJc/w:720/sm:1/enc/YjI4OWRhNTcxMzBi/YzlkN0HqW2HfQyTo/L_OtS1j5IO-rWIhQ/YikbXBSIy7f9n9tT/BSl5iF5wVAw3Y5yB/FeSjaSD9GVeK9Jvo/LN_pA3k8YAl8f9yT/xcZ096J0PY2x8jmD/eV7nsgPOZfChFt_6/DM3F_L2vH0aocYws/P40Cps27KEi9k8OE/1CNLMs0o0Pz9cdW7/dAzGSRPCX4w5W0oz/BAHLyQ.webp"
+              alt="StreamBeats Embroidered Tee product image (1)"
+            >
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="tile__description">
+      <h3 class="tile__heading">
+        StreamBeats Embroidered Tee
+      </h3>
+
+      <p class="tile__prices">
+        
+
+        <span class="tile__price tile__price--original">
+          $29.00
+        </span>
+      </p>
+    </div>
+  </a>
+</div>
+
+            </div>
+          
+            <div class="grid__column grid__column--6 grid__column--3@md">
+              
+
+
+
+
+
+
+
+
+<div data-testid="product" class="product-tile">
+  <a href="/products/senpai-black-tee" class="tile">
+    <div class="tile__image">
+      <div class="image image--background-color">
+        <div class="image__badges">
+          
+            
+          
+
+          
+        </div>
+
+        <div class="image__object">
+          
+            <img
+              src="https://imgproxy.fourthwall.com/Ws5WcIHL-YC1URfVv2B24l314fQMoqOMoM9nDzli8d8/w:720/sm:1/enc/OGIzMWYxYTQ0NmE3/MjExOA6yfyPZfZ_w/f5I-5dMt0gPdWBSc/17pLtXQp_CT2E835/MA4EWWOLe3nAy8Px/QHamrKyJtOsMLrEk/sor5W5AlaM1k1VWM/fUeRsl1vmlXEUWIG/WjVeV9qluCOGc53J/dJtdROevVCRGhUu5/mcoqdomYdsSL1eRr/nd9hDlcfTTloqleO/GmfnQMhw1kxGmLyt/TlUV_Q.webp"
+              alt="Senpai Black Tee product image (1)"
+            >
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="tile__description">
+      <h3 class="tile__heading">
+        Senpai Black Tee
+      </h3>
+
+      <p class="tile__prices">
+        
+
+        <span class="tile__price tile__price--original">
+          $29.00
+        </span>
+      </p>
+    </div>
+  </a>
+</div>
+
+            </div>
+          
+            <div class="grid__column grid__column--6 grid__column--3@md">
+              
+
+
+
+
+
+
+
+
+<div data-testid="product" class="product-tile">
+  <a href="/products/senpai-white-tee" class="tile">
+    <div class="tile__image">
+      <div class="image image--background-color">
+        <div class="image__badges">
+          
+            
+          
+
+          
+        </div>
+
+        <div class="image__object">
+          
+            <img
+              src="https://imgproxy.fourthwall.com/zk0SoJHFIFbodsZfFm3tfmyycNEwDNwmT33RgF1LOCA/w:720/sm:1/enc/NTJiOTU4NWVkZGVi/MmJhNohZBvhgWBw-/HxszVCkjBw-aO8jY/NbQ1f1WkR68IDrdQ/94avB4lgwnwTrqoo/ERVnNcniMjYlm5Bl/Rg95-0bwaUMwHVPa/PJ22Ewww6dFEEoOP/lg4X_KXiRWPjQS3S/S73xbl7WdcS94Kxz/EqC1NCVZui-RgwAH/Am0xWtUCRUYt0PmT/t-O5rilLo-v2ASeB/lxJmkQ.webp"
+              alt="Senpai White Tee product image (1)"
+            >
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="tile__description">
+      <h3 class="tile__heading">
+        Senpai White Tee
+      </h3>
+
+      <p class="tile__prices">
+        
+
+        <span class="tile__price tile__price--original">
+          $29.00
+        </span>
+      </p>
+    </div>
+  </a>
+</div>
+
+            </div>
+          
+            <div class="grid__column grid__column--6 grid__column--3@md">
+              
+
+
+
+
+
+
+
+
+<div data-testid="product" class="product-tile">
+  <a href="/products/senpai-embroidered-jacket-red" class="tile">
+    <div class="tile__image">
+      <div class="image image--background-color">
+        <div class="image__badges">
+          
+            
+          
+
+          
+        </div>
+
+        <div class="image__object">
+          
+            <img
+              src="https://imgproxy.fourthwall.com/HNsjoV5V7dR1C9V1u4OVjuEvtK_4cCXQse-4_f_Yu8s/w:720/sm:1/enc/MjFlMjg1M2M1OTBm/NjA0OaXgsPM6z5dH/b2esaowubS7BAUTi/rsoONl_boYtgK0BF/mkgb8bS5Aq4mHKSq/9UL-nbGhNFfkoquD/wh2I_HQGlDaPwP9k/qr-NOPhbpEb32GNy/qIbatRKpxGVkQAC5/cguS2PtOLPdt-_q9/Q2YCxA4cLop9ikcy/8PzCXcvVyr8kGtvC/pj2HIANtukIl01Hh/w_QxXA.webp"
+              alt="Senpai Embroidered Windbreaker - Red product image (1)"
+            >
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="tile__description">
+      <h3 class="tile__heading">
+        Senpai Embroidered Windbreaker - Red
+      </h3>
+
+      <p class="tile__prices">
+        
+
+        <span class="tile__price tile__price--original">
+          $59.00
+        </span>
+      </p>
+    </div>
+  </a>
+</div>
+
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+</section>
+
+
+</div>
+  </div>
+</div>
+
+      </div>
+
+      <footer class="page__footer">
+        <div id="fw-section-footer" class="fw-section">
+<div data-testid="main.single.section" class="footer">
+  <div class="wrapper">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="grid grid--middle">
+          <div class="grid__column grid__column--12">
+            <a href="/" class="header__logo-link">
+              
+<center><img
+    src="logo.jpg"
+    width="170x"
+    
+    srcset="logo.jpg 2x"
+    alt="Senpai"
+    class="footer__-image"
+    itemprop="logo"
+  ></center>
+  
+
+
+            </a>
+          </div>
+
+          <div class="grid__column grid__column--12">
+            <nav class="footer__nav">
+              <ul class="footer__list footer__list--menu">
+                
+
+                
+                  <li class="footer__list-item">
+                    <a href="/pages/terms-of-service" class="footer__menu-link">Terms of Service</a>
+                  </li>
+                
+                  <li class="footer__list-item">
+                    <a href="/pages/privacy-policy" class="footer__menu-link">Privacy Policy</a>
+                  </li>
+                
+                  <li class="footer__list-item">
+                    <a href="/pages/returns-faq" class="footer__menu-link">Returns & FAQ</a>
+                  </li>
+                
+              </ul>
+            </nav>  
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <ul class="footer__list footer__list--bottom">
+          <li class="footer__list-item">
+            <div class="footer__copy">&copy; 2024 Senpai TV</div>
+          </li>
+
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+      </footer>
+    </div>
+
+    <script>
+  var fourthwallTheme = {
+    strings: {
+      addToCart: "Add to Cart",
+      redeemGift: "Redeem Your Gift",
+      viewCart: "View Cart",
+      checkout: "Checkout",
+      outOfStock: "Out of Stock",
+      unavailable: "Not Available",
+      soldOut: "Sold Out",
+      soldOutSuffix: " - Sold Out",
+      missingQuantityError: "Please choose the quantity.",
+      generalError: "An error occurred. Please try refreshing the page.",
+      item: "item",
+      items: "items",
+      startShopping: "Start Shopping",
+      subtotal: "Subtotal",
+      backToShopping: "Back to Shopping",
+      cart: {
+        heading: "[item_count] [item_count_label] in your cart for [total]",
+        emptyHeading: "Your Shopping Cart is Empty",
+        tableHeader: {
+          item: "Item",
+          quantity: "Quantity",
+          price: "Price"
+        },
+        deleteModal: {
+          heading: "Are you sure you want to remove [title] from your cart?",
+          cancel: "Cancel",
+          delete: "Delete"
+        }
+      },
+      newsletter: {
+        missingEmailError: "Please enter your email.",
+        invalidEmailError: "Please enter a valid email."
+      },
+      donation: {
+        missingAmountError: "Please select or enter the donation amount.",
+        invalidAmountError: "Please enter a valid donation amount.",
+        missingNameError: "Please enter your name.",
+        missingMessageError: "Please enter the message."
+      }
+    },
+    urls: {
+      cart: "/cart",
+      cartItemLocalizedPrefix: "",
+      cartAddUrl: "/cart/add",
+      cartChangeUrl: "/cart/change",
+      allProductsCollection: "/collections/all",
+    }
+  };
+</script>
+
+
+    <script src="https://themes.fourthwall.com/themes-library/assets/10904437-9bc2-4971-a129-aceb423943aa/assets/theme.js?v=bef96bfc98b002bf0c961de3ea10d22a" rel="preload"></script>
+
+    
+
+
+  <div class="admin-bar-container hidden">
+  <div id="admin-bar" class="admin-bar sticky hidden">
+    <div class="wrapper">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+          <path fill="#FDFCFB" d="m11.947 6-.682 3.151H9.983c-1.61 0-1.964.081-2.237 1.195l-.136.733h3.246l-.683 3.178H6.928L4.5 25.692H0l2.428-11.435H.409l.682-3.178h1.991l.219-.923C4.01 6.706 5.7 6 9.628 6h2.319Zm3.525 5.08 1.936 9.913 1.718-9.914h4.637l1.69 9.914 1.938-9.914H32l-3.382 14.613h-5.21L21.446 14.91 19.48 25.692h-5.237L10.862 11.08h4.61Z"/>
+        </svg>
+      </div>
+      <div class="actions">
+        <div class='desktop'>
+          <div class="dropdown">
+            <button class="dropdown-button desktop-switcher pill" data-target="desktop-switcher">View as: </button>
+            <div class="dropdown-content" id="desktop-switcher">
+              <ul>
+                <li class="dropdown-item" data-mode="creator">Admin</li>
+                <li class="dropdown-item" data-mode="supporter">Supporter</li>
+              </ul>
+            </div>
+          </div>
+          <a href="/admin/dashboard/store-design/layout/index" class='pill edit-page' rel='noopener noreferrer'>Edit page</a>
+          <a href="/admin/dashboard" rel="noopener noreferrer" class="pill dashboard-link">Go to dashboard</a>
+        </div>
+
+        <div class='mobile'>
+          <div class="dropdown">
+            <button class="dropdown-button pill mobile-switcher" data-target="mobile-switcher">View as</button>
+            <div class="dropdown-content" id="mobile-switcher">
+              <ul>
+                <li class="dropdown-item" data-mode="creator">Admin</li>
+                <li class="dropdown-item" data-mode="supporter">Supporter</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="dropdown mobile">
+            <button class="dropdown-button pill" data-target="mobile-links">
+              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Dots horizontal">
+                  <g>
+                    <path d="M2.96875 7C2.96875 7.42284 2.62597 7.76562 2.20312 7.76562C1.78028 7.76562 1.4375 7.42284 1.4375 7C1.4375 6.57716 1.78028 6.23438 2.20312 6.23438C2.62597 6.23438 2.96875 6.57716 2.96875 7Z" stroke="#FDFCFB" stroke-width="1.5"/>
+                    <path d="M8.76562 7C8.76562 7.42284 8.42284 7.76562 8 7.76562C7.57716 7.76562 7.23438 7.42284 7.23438 7C7.23438 6.57716 7.57716 6.23438 8 6.23438C8.42284 6.23438 8.76562 6.57716 8.76562 7Z" stroke="#FDFCFB" stroke-width="1.5"/>
+                    <path d="M14.5625 7C14.5625 7.42284 14.2197 7.76562 13.7969 7.76562C13.374 7.76562 13.0312 7.42284 13.0312 7C13.0312 6.57716 13.374 6.23438 13.7969 6.23438C14.2197 6.23438 14.5625 6.57716 14.5625 7Z" stroke="#FDFCFB" stroke-width="1.5"/>
+                  </g>
+                </g>
+              </svg>
+            </button>
+            <div class="dropdown-content" id="mobile-links">
+              <a href="/admin/dashboard" rel="noopener noreferrer" class="dropdown-item">Go to dashboard</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pill close">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <path d="M0.875 13.125L13.125 0.875M13.125 13.125L0.875 0.875" stroke="#FDFCFB" stroke-width="1.5" stroke-linejoin="bevel"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="admin-bar-small" class="admin-bar-small sticky hidden">
+    <div class="wrapper">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+          <path fill="#FDFCFB" d="m11.947 6-.682 3.151H9.983c-1.61 0-1.964.081-2.237 1.195l-.136.733h3.246l-.683 3.178H6.928L4.5 25.692H0l2.428-11.435H.409l.682-3.178h1.991l.219-.923C4.01 6.706 5.7 6 9.628 6h2.319Zm3.525 5.08 1.936 9.913 1.718-9.914h4.637l1.69 9.914 1.938-9.914H32l-3.382 14.613h-5.21L21.446 14.91 19.48 25.692h-5.237L10.862 11.08h4.61Z"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const cookieModule = {
+    setCookie: function (name, value, days = 365, maxAge) {
+      const expires = new Date(Date.now() + days * 24 * 60 * 60 * 1000).toUTCString();
+      let cookieString = `${name}=${value}; expires=${expires}; path=/`;
+
+      if (maxAge) {
+        cookieString += `; max-age=${maxAge}`;
+      }
+
+      document.cookie = cookieString;
+    },
+
+    getCookie: function (name) {
+      const cookie = document.cookie.split(';').find(c => c.trim().startsWith(`${name}=`));
+      return cookie ? cookie.split('=')[1] : null;
+    }
+  };
+
+  const AdminBar = {
+    adminBar: document.getElementById("admin-bar"),
+    adminBarContainer: document.querySelector(".admin-bar-container"),
+    adminBarSmall: document.getElementById("admin-bar-small"),
+    closeButton: document.querySelector('#admin-bar .close'),
+    viewAsDesktopButton: document.querySelector(".desktop-switcher"),
+    dropdownButtons: document.querySelectorAll(".dropdown-button"),
+    dropdownContents: document.querySelectorAll(".dropdown-content"),
+    adminDashboardSource: () => window.location.search.includes("source=dashboard"),
+    removeAdminDashboardSourceParam: () => {
+      const currentUrl = window.location.href;
+
+      if (currentUrl.includes('source=dashboard')) {
+        history.pushState({}, '', currentUrl.replace('source=dashboard', ''));
+      }
+    },
+    inIframe: () => {
+      try {
+        return window.self !== window.top;
+      } catch (e) {
+        return true;
+      }
+    },
+    inThemeEditor: () => cookieModule.getCookie('view_as') === 'theme_editor' || AdminBar.inIframe(),
+    creatorAccessCookieExists: () => cookieModule.getCookie('creator_access_token') || cookieModule.getCookie('logged_in_as') === 'creator',
+    viewAsCreator: () => cookieModule.getCookie('view_as') === 'creator',
+    viewAsSupporter: () => cookieModule.getCookie('view_as') === 'supporter',
+    verifyCreator: () => {
+      document.cookie = 'return_to=' + window.location.href + '; path=/; max-age=30;';
+      window.location.href = '/platform/creators/users/auth/verify';
+    },
+    authorizeCreator: () => {
+      if (AdminBar.creatorAccessCookieExists() && (AdminBar.viewAsCreator() || !AdminBar.viewAsSupporter())) {
+        fetch("/platform/creators/users/auth")
+          .then((response) => {
+            if (response.status === 401 && _this.viewAsCreator()) {
+              AdminBar.verifyCreator();
+            } else if (response.status === 204) {
+              cookieModule.setCookie('view_as', 'creator');
+              AdminBar.viewAsDesktopButton.textContent = 'View as: Admin';
+              
+            }
+          });
+      }
+    },
+    getSelectedView: () => (AdminBar.viewAsCreator() ? 'Admin' : 'Supporter'),
+    toggleDropdown: (dropdownContent) => {
+      dropdownContent.style.display = dropdownContent.style.display === 'none' || dropdownContent.style.display === '' ? 'block' : 'none';
+    },
+    init() {
+      if (AdminBar.adminDashboardSource() && !cookieModule.getCookie('core_dashboard_visited')) {
+        cookieModule.setCookie('core_dashboard_visited', 'source-dashboard');
+      }
+
+      if (
+        !AdminBar.inThemeEditor() &&
+        (cookieModule.getCookie('core_dashboard_visited') || cookieModule.getCookie('creator_access_token') || cookieModule.getCookie('logged_in_as') === 'creator' || AdminBar.adminDashboardSource())
+      ) {
+        AdminBar.viewAsDesktopButton.textContent = 'View as: ' + AdminBar.getSelectedView();
+        AdminBar.authorizeCreator();
+        AdminBar.adminBarContainer.classList.toggle('hidden');
+        if (cookieModule.getCookie('admin_bar_mode') === 'condensed') {
+          AdminBar.adminBarSmall.classList.toggle('hidden');
+        } else {
+          AdminBar.adminBar.classList.toggle('hidden');
+        }
+      }
+
+      AdminBar.removeAdminDashboardSourceParam();
+
+      AdminBar.closeButton.addEventListener('click', () => {
+        cookieModule.setCookie('admin_bar_mode', 'condensed');
+        AdminBar.adminBar.classList.toggle('hidden');
+        AdminBar.adminBarSmall.classList.toggle('hidden');
+      });
+
+      AdminBar.adminBarSmall.addEventListener('click', () => {
+        cookieModule.setCookie('admin_bar_mode', 'expanded');
+        AdminBar.adminBar.classList.toggle('hidden');
+        AdminBar.adminBarSmall.classList.toggle('hidden');
+      });
+
+      // Add event listeners to each dropdown button
+      AdminBar.dropdownButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const dropdownId = button.getAttribute("data-target");
+          const dropdownContent = document.getElementById(dropdownId);
+          AdminBar.toggleDropdown(dropdownContent);
+        });
+      });
+
+      // Close the dropdowns when clicking outside
+      document.addEventListener("click", (event) => {
+        AdminBar.dropdownButtons.forEach((button) => {
+          const dropdownId = button.getAttribute("data-target");
+          const dropdownContent = document.getElementById(dropdownId);
+          if (event.target !== button && !button.contains(event.target) && event.target !== dropdownContent) {
+            dropdownContent.style.display = "none";
+          }
+        });
+      });
+
+      document.querySelectorAll(".dropdown-content li").forEach((item) => {
+        item.addEventListener("click", (event) => {
+          const mode = event.target.getAttribute("data-mode");
+          if (mode === 'creator') {
+            cookieModule.setCookie('view_as', 'creator');
+            AdminBar.verifyCreator();
+          } else {
+            cookieModule.setCookie('view_as', 'supporter');
+            cookieModule.setCookie('creator_access_token', 'creator', 365, 0);
+            window.location.reload();
+          }
+        });
+      });
+    },
+  };
+
+  AdminBar.init();
+</script>
+
+<style>
+  .admin-bar-container {
+    height: 56px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .admin-bar,
+  .admin-bar-small {
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    height: 56px;
+    width: 100%;
+  }
+
+  .admin-bar-small {
+    width: 73px;
+    cursor: pointer;
+  }
+
+  .sticky {
+    position: fixed;
+    bottom: 0;
+  }
+
+  .admin-bar a {
+    color: #FDFCFB;
+    padding: 14px;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .admin-bar button {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .admin-bar .wrapper,
+  .admin-bar-small .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .admin-bar-small .wrapper {
+    padding: 12px 20px;
+  }
+
+  .admin-bar .pill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-transform: capitalize;
+
+    padding: 6px 14px;
+    border-radius: 100px;
+    background: rgba(253, 252, 251, 0.12);
+
+    cursor: pointer;
+  }
+
+  .admin-bar .pill:hover {
+    background: rgba(253, 252, 251, 0.22);
+  }
+
+  .admin-bar .close {
+    padding: 6px 11px;
+  }
+
+  .admin-bar .actions,
+  .admin-bar .actions .desktop,
+  .admin-bar .actions .mobile {
+    display: flex;
+    gap: 10px;
+  }
+
+  .admin-bar .actions .desktop,
+  .admin-bar .actions .edit-page {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .admin-bar a,
+    .admin-bar button {
+      font-size: 16px;
+    }
+
+    .admin-bar .actions .desktop,
+    .admin-bar .actions .edit-page {
+      display: flex;
+      gap: 10px;
+    }
+
+    .admin-bar .actions .mobile {
+      display: none;
+    }
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.9);
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    bottom: 100%; /* Position above the button */
+    border-radius: 10px;
+    bottom: calc((100% + 8px) - 0px);
+    right: 0;
+  }
+
+  /* Style for each list item */
+  .dropdown-content .dropdown-item {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    white-space: nowrap;
+    display: block;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  .dropdown-content .dropdown-item:hover {
+    background-color: rgba(255,255,255,0.2)
+  }
+
+  /* Style for the button */
+  .dropdown-button {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    line-height: 24px;
+  }
+</style>
+
+</body>
+</html>
