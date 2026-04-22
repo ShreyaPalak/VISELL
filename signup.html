@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="ViSell - Sign Up" />
+    <meta name="theme-color" content="#262626" />
+    <title>VISELL - Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a class="navbar__brand" href="vis3ll2.html" aria-label="ViSell Home">
+            <img class="navbar__logo" src="logo3.jpg" alt="ViSell Logo" />
+        </a>
+        <ul class="nav-links">
+            <li><a href="vis3ll2.html#home">Home</a></li>
+            <li><a href="vis3ll2.html#about">About Us</a></li>
+            <li><a href="vis3ll2.html#categories">Categories</a></li>
+            <li><a href="vis3ll2.html#cart">Cart</a></li>
+            <li><a href="vis3ll2.html#contact">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="page">
+        <div class="page__main">
+            <div class="signup-container">
+                <div class="signup-box">
+                    <h1 class="signup-title">Join ViSell</h1>
+                    <p class="signup-subtitle">Create your account to start buying and selling</p>
+                    
+                    <form class="signup-form" onsubmit="handleSignup(event)">
+                        <div class="form-group">
+                            <label for="fullname">Full Name</label>
+                            <input 
+                                type="text" 
+                                id="fullname" 
+                                name="fullname" 
+                                placeholder="Enter your full name"
+                                required
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="Enter your email"
+                                required
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                placeholder="Enter your phone number"
+                                pattern="[0-9]{10}"
+                                required
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="college">College/Institute</label>
+                            <input 
+                                type="text" 
+                                id="college" 
+                                name="college" 
+                                placeholder="e.g., VIT Vellore"
+                                required
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input 
+                                type="password" 
+                                id="password" 
+                                name="password" 
+                                placeholder="Enter a strong password"
+                                minlength="6"
+                                required
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirm_password">Confirm Password</label>
+                            <input 
+                                type="password" 
+                                id="confirm_password" 
+                                name="confirm_password" 
+                                placeholder="Confirm your password"
+                                minlength="6"
+                                required
+                            />
+                        </div>
+
+                        <div class="form-group checkbox">
+                            <input 
+                                type="checkbox" 
+                                id="terms" 
+                                name="terms"
+                                required
+                            />
+                            <label for="terms">I agree to the Terms of Service and Privacy Policy</label>
+                        </div>
+
+                        <button type="submit" class="signup-btn">Create Account</button>
+                    </form>
+
+                    <div class="signup-footer">
+                        <p>Already have an account? <a href="login.html">Login here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page__footer">
+        <div class="footer">
+            <div class="wrapper">
+                <div class="footer__inner">
+                    <div class="footer__bottom">
+                        <ul class="footer__list footer__list--bottom">
+                            <li class="footer__list-item">
+                                <div class="footer__copy">&copy; 2024 ViSell. All rights reserved.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function handleSignup(event) {
+            event.preventDefault();
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm_password').value;
+            const fullname = document.getElementById('fullname').value;
+            
+            if (password !== confirmPassword) {
+                alert('Passwords do not match!');
+                return;
+            }
+            
+            if (password.length < 6) {
+                alert('Password must be at least 6 characters long!');
+                return;
+            }
+            
+            alert('Welcome to ViSell, ' + fullname + '! (This is a demo)');
+        }
+    </script>
+</body>
+</html>
