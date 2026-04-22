@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="ViSell - Login" />
+    <meta name="theme-color" content="#262626" />
+    <title>VISELL - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a class="navbar__brand" href="vis3ll2.html" aria-label="ViSell Home">
+            <img class="navbar__logo" src="logo3.jpg" alt="ViSell Logo" />
+        </a>
+        <ul class="nav-links">
+            <li><a href="vis3ll2.html#home">Home</a></li>
+            <li><a href="vis3ll2.html#about">About Us</a></li>
+            <li><a href="vis3ll2.html#categories">Categories</a></li>
+            <li><a href="vis3ll2.html#cart">Cart</a></li>
+            <li><a href="vis3ll2.html#contact">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="page">
+        <div class="page__main">
+            <div class="login-container">
+                <div class="login-box">
+                    <h1 class="login-title">Welcome to ViSell</h1>
+                    <p class="login-subtitle">Buy and sell used items in the VIT Vellore community</p>
+                    
+                    <form class="login-form" onsubmit="handleLogin(event)">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="Enter your email"
+                                required
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input 
+                                type="password" 
+                                id="password" 
+                                name="password" 
+                                placeholder="Enter your password"
+                                required
+                            />
+                        </div>
+
+                        <div class="form-group checkbox">
+                            <input 
+                                type="checkbox" 
+                                id="remember" 
+                                name="remember"
+                            />
+                            <label for="remember">Remember me</label>
+                        </div>
+
+                        <button type="submit" class="login-btn">Login</button>
+                    </form>
+
+                    <div class="login-footer">
+                        <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+                        <p><a href="#forgot-password">Forgot your password?</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page__footer">
+        <div class="footer">
+            <div class="wrapper">
+                <div class="footer__inner">
+                    <div class="footer__bottom">
+                        <ul class="footer__list footer__list--bottom">
+                            <li class="footer__list-item">
+                                <div class="footer__copy">&copy; 2024 ViSell. All rights reserved.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function handleLogin(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            
+            if (email && password) {
+                alert('Welcome back, ' + email + '! (This is a demo)');
+            }
+        }
+    </script>
+</body>
+</html>
