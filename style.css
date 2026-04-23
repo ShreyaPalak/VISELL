@@ -95,8 +95,8 @@ body {
 }
 
 .nav-links a.active {
-  background-color: #04AA6D;
-  color: rgb(215, 204, 204);
+  background-color: #06db71;
+  color: rgb(0, 0, 0);
 }
 
 /* Search Bar */
