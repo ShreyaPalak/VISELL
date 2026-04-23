@@ -1,1115 +1,930 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="ViSell - A student second-hand e-commerce website. Find and sell used products within the VIT Vellore community." />
-    <meta name="theme-color" content="#262626" />
-    <title>VISELL</title>
-    <link rel="stylesheet" href="style.css" />
 
-    <link rel="stylesheet" href="https://themes.fourthwall.com/themes-library/assets/10904437-9bc2-4971-a129-aceb423943aa/assets/vendor.css" media="all" />
-    <link rel="stylesheet" href="https://themes.fourthwall.com/themes/assets/eb9eb0ad-3a21-4430-b05a-3c98c6161500/assets/styles/theme.scss.css" media="all" />
-    <link rel="preconnect" href="https://imgproxy.fourthwall.com" crossorigin />
-    <link rel="preconnect" href="https://storage.googleapis.com" crossorigin />
-  </head>
-  <body>
-    <div class="navbar">
-      <a class="navbar__brand" href="#home" aria-label="ViSell Home">
-        <img class="navbar__logo" src="logo3.jpg" alt="ViSell Logo" />
-      </a>
-      <ul class="nav-links">
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#categories">Categories</a></li>
-        <li><a href="#cart">Cart</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-        <li><a href="login.html" class="login-link">Login</a></li>
-      </ul>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="ViSell - A student second-hand e-commerce website. Find and sell used products within the VIT Vellore community." />
+  <meta name="theme-color" content="#262626" />
+  <title>VISELL</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet"
+    href="https://themes.fourthwall.com/themes-library/assets/10904437-9bc2-4971-a129-aceb423943aa/assets/vendor.css"
+    media="all" />
+  <link rel="stylesheet"
+    href="https://themes.fourthwall.com/themes/assets/eb9eb0ad-3a21-4430-b05a-3c98c6161500/assets/styles/theme.scss.css"
+    media="all" />
+  <link rel="preconnect" href="https://imgproxy.fourthwall.com" crossorigin />
+  <link rel="preconnect" href="https://storage.googleapis.com" crossorigin />
+</head>
+
+<body>
+  <div class="navbar">
+    <a class="navbar__brand" href="#home" aria-label="ViSell Home">
+      <img class="navbar__logo" src="logo3.png" alt="ViSell Logo" />
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#categories">Categories</a></li>
+      <li><a href="#cart">Cart</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="login.html" class="login-link">Login</a></li>
+    </ul>
+    <div class="search-bar">
+      <div class="search-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" id="Isolation_Mode" data-name="Isolation Mode" viewBox="0 0 24 24" width="22" height="22">
+          <path d="M18.9,16.776A10.539,10.539,0,1,0,16.776,18.9l5.1,5.1L24,21.88ZM10.5,18A7.5,7.5,0,1,1,18,10.5,7.507,7.507,0,0,1,10.5,18Z"></path>
+        </svg>
+      </div>
+      <input type="text" class="search-input" placeholder="Search..." />
     </div>
+  </div>
 
-    <div class="page">
+  <div class="page">
+    <div class="page__main">
+      <div class="main">
+        <div data-testid="main.sections" class="main__sections">
+          <div id="fw-section-hero-slider-custom-1702724207" class="fw-section"><section class="hero-slider">
+            <div class="hero-slider__main">
+                <div class="hero-slider__slider" data-hero-slider="slider">
+                  <div class="hero-slider__slide">
+                    <div class="hero-slider__gallery">
+                      <div class="tile__image">
+                        <div class="image image--hero-slider">
 
+                          <div class="image__object">
+                            <div class="hero-slider__image-overlay"></div>
+                            <img src="logo.jpg" />
 
-      <div class="page__main">
-        <div class="main">
-  <div data-testid="main.sections" class="main__sections">
-    <div id="fw-section-hero-slider-custom-1702724207" class="fw-section"><section class="hero-slider">
-  
-    <div class="hero-slider__main">
-      <div class="hero-slider__slider" data-hero-slider="slider">
+                          </div>
+                          <div class="content">
+                            <h1>Welcome to ViSell</h1>
+                            <p>ViSell is a student-driven second-hand e-commerce platform at VIT Vellore. Buy and sell
+                              used items conveniently within the community.</p>
+                          </div>
 
+                          <footer>
+                            <p>© 2024 ViSell. All rights reserved.</p>
+                          </footer>
 
-
-
-
-
-
-
-
-
-          <div class="hero-slider__slide">
-            <div class="hero-slider__gallery">
-               <div class="tile__image">
-                <div  class="image image--hero-slider">
-
-
-                    <div class="image__object">
-                      <div class="hero-slider__image-overlay"></div>
-                      <img src="logo.jpg" />
-
+                        </div>
+                      </div>
                     </div>
-                    <div class="content">
-                        <h1>Welcome to ViSell</h1>
-                        <p>ViSell is a student-driven second-hand e-commerce platform at VIT Vellore. Buy and sell used items conveniently within the community.</p>
+                  </div>
+
+                  <div class="hero-slider__slide">
+                    <div class="hero-slider__gallery">
+                      <div class="tile__image">
+                        <div class="image image--hero-slider">
+
+                          <div class="image__object">
+                            <div class="hero-slider__image-overlay"></div>
+                            <img src="1.jpeg" width="100" />
+
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="hero-slider__slide">
+                    <div class="hero-slider__gallery">
+                      <div class="tile__image">
+                        <div class="image image--hero-slider">
+
+                          <a href="" target="_blank">
+
+                            <div class="image__object">
+                              <div class="hero-slider__image-overlay"></div>
+                              <img
+                                src="https://www.newszii.com/wp-content/uploads/2018/07/Best-Tech-Product-Every-Student.jpg" />
+
+                            </div>
+
+                          </a>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="hero-slider__slide">
+                    <div class="hero-slider__gallery">
+                      <div class="tile__image">
+                        <div class="image image--hero-slider">
+
+                          <a href="/collections/all" target="_blank">
+
+                            <div class="image__object">
+                              <div class="hero-slider__image-overlay"></div>
+                              <img
+                                src="https://www.studentsshop.co.in/_next/image?url=https://cdn.dotpe.in/kiranaStatic/Premium_Images/Art%2520%2526%2520Craft/Art%2520Craft%2520Web/JPEG/wgth1.jpg&w=1920&q=75" />
+
+                            </div>
+
+                          </a>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="hero-slider__nav-container">
+                <div class="hero-slider__nav" data-hero-slider="nav">
+
+                  <div class="hero-slider__nav-item" data-hero-thumbnail>
+                    <img src="logo.jpg" alt="">
+                    <div class="hero-slider__nav-item-button" data-hero-autoplay-toggle></div>
+                  </div>
+
+                  <div class="hero-slider__nav-item" data-hero-thumbnail>
+                    <img src="1.jpeg" width="100" alt="">
+                    <div class="hero-slider__nav-item-button" data-hero-autoplay-toggle></div>
+                  </div>
+
+                  <div class="hero-slider__nav-item" data-hero-thumbnail>
+                    <img src="https://www.newszii.com/wp-content/uploads/2018/07/Best-Tech-Product-Every-Student.jpg"
+                      alt="">
+                    <div class="hero-slider__nav-item-button" data-hero-autoplay-toggle></div>
+                  </div>
+
+                  <div class="hero-slider__nav-item" data-hero-thumbnail>
+                    <img
+                      src="https://www.studentsshop.co.in/_next/image?url=https%3A%2F%2Fcdn.dotpe.in%2FkiranaStatic%2FPremium_Images%2FArt%2520%2526%2520Craft%2FArt%2520Craft%2520Web%2FJPEG%2Fwgth1.jpg&w=1920&q=75"
+                      alt="">
+                    <div class="hero-slider__nav-item-button" data-hero-autoplay-toggle></div>
+                  </div>
+
+                </div>
+              </div>
+          </div>
+
+          <div>
+            <button class="hero-slider__button-autoplay" data-hero-autoplay>toggle slider</button>
+          </div>
+          </section>
+
+        </div>
+        <div id="fw-section-featured-collection-1711992078" class="fw-section">
+
+          <section data-section-id="fw-section-featured-collection-1711992078" data-testid="main.single.section"
+            class="featured-collection featured-collection--fw-section-featured-collection-1711992078">
+            <div class="collection">
+              <div class="container wrapper">
+                <div class="collection__header">
+                  <div class="section-header">
+
+                    <h2 class="section-header__heading">V</h2>
+
+                    <div class="section-header__cta">
+                      <a href="" class="button button--outline button--small">
+                        All Essentials
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="collection__grid">
+                  <div class="grid grid--waffle grid--center">
+
+                    <div class="grid__column grid__column--6 grid__column--3@md">
+
+                      <div data-testid="product" class="product-tile">
+                        <a href="/products/cartographer-abyss" class="tile">
+                          <div class="tile__image">
+                            <div class="image image--background-color">
+                              <div class="image__badges">
+
+                              </div>
+
+                              <div class="image__object">
+
+                                <img src="2.webp" alt="Cartographer - Abyss product image (1)">
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tile__description">
+                            <h3 class="tile__heading">
+                              Cartographer - Abyss
+                            </h3>
+
+                            <p class="tile__prices">
+
+                              <span class="tile__price tile__price--original">
+                                ₹1,450
+                              </span>
+                            </p>
+                          </div>
+                        </a>
                       </div>
 
-                      <footer>
-                        <p>© 2024 ViSell. All rights reserved.</p>
-                      </footer>
+                    </div>
 
+                    <div class="grid__column grid__column--6 grid__column--3@md">
 
-                </div>
-              </div>
-            </div>
-          </div>
+                      <div data-testid="product" class="product-tile">
+                        <a href="/products/cartographer-ghost" class="tile">
+                          <div class="tile__image">
+                            <div class="image image--background-color">
+                              <div class="image__badges">
 
+                              </div>
 
+                              <div class="image__object">
 
+                                <img src="4.webp" alt="Cartographer - Ghost product image (1)">
 
+                              </div>
+                            </div>
+                          </div>
 
+                          <div class="tile__description">
+                            <h3 class="tile__heading">
+                              Cartographer - Ghost
+                            </h3>
 
+                            <p class="tile__prices">
 
-
-
-
-          <div class="hero-slider__slide">
-            <div class="hero-slider__gallery">
-               <div class="tile__image">
-                <div  class="image image--hero-slider">
-
-                    <div class="image__object">
-                      <div class="hero-slider__image-overlay"></div>
-                      <img src="1.jpeg" width="100" />
+                              <span class="tile__price tile__price--original">
+                                ₹1,450
+                              </span>
+                            </p>
+                          </div>
+                        </a>
+                      </div>
 
                     </div>
 
-                </div>
-              </div>
-            </div>
-          </div>
+                    <div class="grid__column grid__column--6 grid__column--3@md">
 
+                      <div data-testid="product" class="product-tile">
+                        <a href="/products/sunrise" class="tile">
+                          <div class="tile__image">
+                            <div class="image image--background-color">
+                              <div class="image__badges">
 
+                              </div>
 
+                              <div class="image__object">
 
+                                <img src="10.jpeg" alt="Sunrise product image (1)">
 
+                              </div>
+                            </div>
+                          </div>
 
+                          <div class="tile__description">
+                            <h3 class="tile__heading">
+                              Sunrise
+                            </h3>
 
+                            <p class="tile__prices">
 
-
-
-          <div class="hero-slider__slide">
-            <div class="hero-slider__gallery">
-               <div class="tile__image">
-                <div  class="image image--hero-slider">
-
-
-                    <a href="" target="_blank">
-
-
-                    <div class="image__object">
-                      <div class="hero-slider__image-overlay"></div>
-                      <img src="https://www.newszii.com/wp-content/uploads/2018/07/Best-Tech-Product-Every-Student.jpg" />
-
-                    </div>
-
-
-                    </a>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-
-
-
-
-
-          <div class="hero-slider__slide">
-            <div class="hero-slider__gallery">
-               <div class="tile__image">
-                <div  class="image image--hero-slider">
-                  /collections/all
-
-                    <a href="/collections/all" target="_blank">
-
-
-                    <div class="image__object">
-                      <div class="hero-slider__image-overlay"></div>
-                      <img src="https://www.studentsshop.co.in/_next/image?url=https://cdn.dotpe.in/kiranaStatic/Premium_Images/Art%2520%2526%2520Craft/Art%2520Craft%2520Web/JPEG/wgth1.jpg&w=1920&q=75" />
+                              <span class="tile__price tile__price--original">
+                                ₹1,450
+                              </span>
+                            </p>
+                          </div>
+                        </a>
+                      </div>
 
                     </div>
 
+                    <div class="grid__column grid__column--6 grid__column--3@md">
 
-                    </a>
+                      <div data-testid="product" class="product-tile">
+                        <a href="/products/garden" class="tile">
+                          <div class="tile__image">
+                            <div class="image image--background-color">
+                              <div class="image__badges">
 
+                              </div>
+
+                              <div class="image__object">
+
+                                <img src="7.jpeg" alt="Garden product image (1)">
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tile__description">
+                            <h3 class="tile__heading">
+                              Garden
+                            </h3>
+
+                            <p class="tile__prices">
+
+                              <span class="tile__price tile__price--original">
+                                ₹1,450
+                              </span>
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+
+                    </div>
+
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </section>
 
+        </div>
+        <div id="fw-section-featured-collection-0" class="fw-section">
+
+          <section data-section-id="fw-section-featured-collection-0" data-testid="main.single.section"
+            class="featured-collection featured-collection--fw-section-featured-collection-0">
+            <div class="collection">
+              <div class="container wrapper">
+                <div class="collection__header">
+                  <div class="section-header">
+
+                    <h2 class="section-header__heading">STUDENT ESSENTIALS - USED & SECOND-HAND</h2>
+
+                  </div>
+                </div>
+
+                <div class="collection__grid">
+                  <div class="grid grid--waffle grid--center">
+
+                    <div class="grid__column grid__column--6 grid__column--3@md">
+
+                      <div data-testid="product" class="product-tile">
+                        <a href="/products/the-vetruvian-waifu-sweatshirt" class="tile">
+                          <div class="tile__image">
+                            <div class="image image--background-color">
+                              <div class="image__badges">
+
+                              </div>
+
+                              <div class="image__object">
+
+                                <img src="5.jpeg" alt="The Vetruvian Waifu Sweatshirt product image (1)">
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tile__description">
+                            <h3 class="tile__heading">
+                              Stick Files
+                            </h3>
+
+                            <p class="tile__prices">
+
+                              <span class="tile__price tile__price--original">
+                                ₹2,250
+                              </span>
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+
+                    </div>
+
+                    <div class="grid__column grid__column--6 grid__column--3@md">
+
+                      <div data-testid="product" class="product-tile">
+                        <a href="/products/the-vetruvian-waifu-long-sleeve" class="tile">
+                          <div class="tile__image">
+                            <div class="image image--background-color">
+                              <div class="image__badges">
+
+                              </div>
+
+                              <div class="image__object">
+
+                                <img src="3.webp" alt="The Vetruvian Waifu Long Sleeve product image (1)">
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tile__description">
+                            <h3 class="tile__heading">
+                              The Vetruvian Waifu Long Sleeve
+                            </h3>
+
+                            <p class="tile__prices">
+
+                              <span class="tile__price tile__price--original">
+                                ₹1,450
+                              </span>
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+
+                    </div>
+
+                    <div class="grid__column grid__column--6 grid__column--3@md">
+
+                      <div data-testid="product" class="product-tile">
+                        <a href="/products/idiot-beanie" class="tile">
+                          <div class="tile__image">
+                            <div class="image image--background-color">
+                              <div class="image__badges">
+
+                              </div>
+
+                              <div class="image__object">
+
+                                <img src="2.jpeg" alt="Idiot Waffle Beanie product image (1)">
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tile__description">
+                            <h3 class="tile__heading">
+                              Idiot Waffle Beanie
+                            </h3>
+
+                            <p class="tile__prices">
+
+                              <span class="tile__price tile__price--original">
+                                ₹1,250
+                              </span>
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+
+                    </div>
+
+                    <div class="grid__column grid__column--6 grid__column--3@md">
+
+                      <div data-testid="product" class="product-tile">
+                        <a href="/products/genius-beanie-2" class="tile">
+                          <div class="tile__image">
+                            <div class="image image--background-color">
+                              <div class="image__badges">
+
+                              </div>
+
+                              <div class="image__object">
+
+                                <img src="1.jpeg" width="100">
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tile__description">
+                            <h3 class="tile__heading">
+                              Genius Waffle Beanie
+                            </h3>
+
+                            <p class="tile__prices">
+
+                              <span class="tile__price tile__price--original">
+                                ₹1,250
+                              </span>
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+
+                    </div>
+
+                    <div class="grid__column grid__column--6 grid__column--3@md">
+
+                      <div data-testid="product" class="product-tile">
+                        <a href="" class="tile">
+                          <div class="tile__image">
+                            <div class="image image--background-color">
+                              <div class="image__badges">
+
+                              </div>
+
+                              <div class="image__object">
+
+                                <img
+                                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnwlcSONZ2bljriWN5mqaFOWM43qV0UYirAw&s"
+                                  alt="Used Warm Hoodie product image (1)">
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tile__description">
+                            <h3 class="tile__heading">
+                              Used Warm Hoodie
+                            </h3>
+
+                            <p class="tile__prices">
+
+                              <span class="tile__price tile__price--original">
+                                ₹2,450
+                              </span>
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+
+                    </div>
+
+                    <div class="grid__column grid__column--6 grid__column--3@md">
+
+                      <div data-testid="product" class="product-tile">
+                        <a href="/products/notice-me-tee" class="tile">
+                          <div class="tile__image">
+                            <div class="image image--background-color">
+                              <div class="image__badges">
+
+                              </div>
+
+                              <div class="image__object">
+
+                                <img
+                                  src="https://imgproxy.fourthwall.com/Cav3gcD_ZSSwNpcrmRyy_AARFijkPTg9zyDwMVvTCV8/w:720/sm:1/enc/MWE0NDljMDQ1NWYw/NDg2Y3K67nCZ8zlc/x-AVdY6HKrK0iVjc/2j58uLbtjh1y7cud/5sJOfBV2chUON33h/IzanmTO4H9-2jsPF/li-RTOP5FAQlmcaE/Gqz-uAl5hcffRZpy/ZXZPy79QXSYGQzGn/Yxb-HnuVCxlk04I9/C6Z2eQxGHpXoI3hs/I3U5EU5yzTeqLI95/YL9RhgvcN5iOK-DN/4UmJUg.webp"
+                                  alt="Used College T-shirt product image (1)">
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tile__description">
+                            <h3 class="tile__heading">
+                              Used College T-shirt
+                            </h3>
+
+                            <p class="tile__prices">
+
+                              <span class="tile__price tile__price--original">
+                                ₹1,450
+                              </span>
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+
+                    </div>
+
+                    <div class="grid__column grid__column--6 grid__column--3@md">
+
+                      <div data-testid="product" class="product-tile">
+                        <a href="/products/notice-me-hoodie-uwu-edition" class="tile">
+                          <div class="tile__image">
+                            <div class="image image--background-color">
+                              <div class="image__badges">
+
+                              </div>
+
+                              <div class="image__object">
+
+                                <img
+                                  src="https://imgproxy.fourthwall.com/hOEUcYiTZHX8zxOJcetwCtHbfdzAafkLn4G1Jd7KpEs/w:720/sm:1/enc/YWJjYWQwYzY4NGVm/MDRiOFSdus3MkrIx/AI9b1a9g7S_eOR0I/qKSvmOD2Z9XVVJqD/VOWWv-p9t-G6_D_M/DBoRINqKcPAlmFp4/Sr3DZ6fkiEsxW1xq/h0t4b7UqsmVULQya/i6KLVz5F7x5JEX9u/MANejggMtrrHH46n/fAsvehgf29IlKnOF/eQZMBslsyz7_G4tk/rkLQrjcPm0gNW8TH/Mflpuw.webp"
+                                  alt="Used Warm Hoodie - UWU Edition (Limited) product image (1)">
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tile__description">
+                            <h3 class="tile__heading">
+                              Used Warm Hoodie - UWU Edition (Limited)
+                            </h3>
+
+                            <p class="tile__prices">
+
+                              <span class="tile__price tile__price--original">
+                                ₹2,950
+                              </span>
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+
+                    </div>
+
+                    <div class="grid__column grid__column--6 grid__column--3@md">
+
+                      <div data-testid="product" class="product-tile">
+                        <a href="/products/streambeats-embroidered-hoodie" class="tile">
+                          <div class="tile__image">
+                            <div class="image image--background-color">
+                              <div class="image__badges">
+
+                              </div>
+
+                              <div class="image__object">
+
+                                <img
+                                  src="https://imgproxy.fourthwall.com/WQfpDQ32RdNV7hBC5qLY3zGYTlalsIGpzb9Aa3T1Gfc/w:720/sm:1/enc/OTU1M2RmYzBmMDVh/YWFkY6Ga2dlx5mFV/F4_8G_2osuQ8bwgY/lBvcxeFUhlJIm_2b/L2EWYj9k3cphwbcp/EXr_4033MYkvcqeb/CZIbzhTbqODIUiOd/Edf3tbXnqlGpNqv_/tCCRWm9QX_ohuHc9/RE1LQ2f0bkXb_Hu2/OUD7Slqd1huPUz80/ruHRz9br0X4Bf1qc/o-Hn7ii28lT2klh5/Saqbww.webp"
+                                  alt="StreamBeats Embroidered Hoodie product image (1)">
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tile__description">
+                            <h3 class="tile__heading">
+                              StreamBeats Embroidered Hoodie
+                            </h3>
+
+                            <p class="tile__prices">
+
+                              <span class="tile__price tile__price--original">
+                                ₹2,950
+                              </span>
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+
+                    </div>
+
+                    <div class="grid__column grid__column--6 grid__column--3@md">
+
+                      <div data-testid="product" class="product-tile">
+                        <a href="/products/streambeats-embroidered-tee" class="tile">
+                          <div class="tile__image">
+                            <div class="image image--background-color">
+                              <div class="image__badges">
+
+                              </div>
+
+                              <div class="image__object">
+
+                                <img
+                                  src="https://imgproxy.fourthwall.com/GzZl2Zko64eAbt3_78VEt33UxpB1fYmXpw_Mbfy7NJc/w:720/sm:1/enc/YjI4OWRhNTcxMzBi/YzlkN0HqW2HfQyTo/L_OtS1j5IO-rWIhQ/YikbXBSIy7f9n9tT/BSl5iF5wVAw3Y5yB/FeSjaSD9GVeK9Jvo/LN_pA3k8YAl8f9yT/xcZ096J0PY2x8jmD/eV7nsgPOZfChFt_6/DM3F_L2vH0aocYws/P40Cps27KEi9k8OE/1CNLMs0o0Pz9cdW7/dAzGSRPCX4w5W0oz/BAHLyQ.webp"
+                                  alt="StreamBeats Embroidered Tee product image (1)">
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tile__description">
+                            <h3 class="tile__heading">
+                              StreamBeats Embroidered Tee
+                            </h3>
+
+                            <p class="tile__prices">
+
+                              <span class="tile__price tile__price--original">
+                                ₹1,450
+                              </span>
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+
+                    </div>
+
+                    <div class="grid__column grid__column--6 grid__column--3@md">
+
+                      <div data-testid="product" class="product-tile">
+                        <a href="/products/senpai-black-tee" class="tile">
+                          <div class="tile__image">
+                            <div class="image image--background-color">
+                              <div class="image__badges">
+
+                              </div>
+
+                              <div class="image__object">
+
+                                <img
+                                  src="https://imgproxy.fourthwall.com/Ws5WcIHL-YC1URfVv2B24l314fQMoqOMoM9nDzli8d8/w:720/sm:1/enc/OGIzMWYxYTQ0NmE3/MjExOA6yfyPZfZ_w/f5I-5dMt0gPdWBSc/17pLtXQp_CT2E835/MA4EWWOLe3nAy8Px/QHamrKyJtOsMLrEk/sor5W5AlaM1k1VWM/fUeRsl1vmlXEUWIG/WjVeV9qluCOGc53J/dJtdROevVCRGhUu5/mcoqdomYdsSL1eRr/nd9hDlcfTTloqleO/GmfnQMhw1kxGmLyt/TlUV_Q.webp"
+                                  alt="Used Black Casual Tee product image (1)">
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tile__description">
+                            <h3 class="tile__heading">
+                              Used Black Casual Tee
+                            </h3>
+
+                            <p class="tile__prices">
+
+                              <span class="tile__price tile__price--original">
+                                ₹1,450
+                              </span>
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+
+                    </div>
+
+                    <div class="grid__column grid__column--6 grid__column--3@md">
+
+                      <div data-testid="product" class="product-tile">
+                        <a href="/products/senpai-white-tee" class="tile">
+                          <div class="tile__image">
+                            <div class="image image--background-color">
+                              <div class="image__badges">
+
+                              </div>
+
+                              <div class="image__object">
+
+                                <img
+                                  src="https://imgproxy.fourthwall.com/zk0SoJHFIFbodsZfFm3tfmyycNEwDNwmT33RgF1LOCA/w:720/sm:1/enc/NTJiOTU4NWVkZGVi/MmJhNohZBvhgWBw-/HxszVCkjBw-aO8jY/NbQ1f1WkR68IDrdQ/94avB4lgwnwTrqoo/ERVnNcniMjYlm5Bl/Rg95-0bwaUMwHVPa/PJ22Ewww6dFEEoOP/lg4X_KXiRWPjQS3S/S73xbl7WdcS94Kxz/EqC1NCVZui-RgwAH/Am0xWtUCRUYt0PmT/t-O5rilLo-v2ASeB/lxJmkQ.webp"
+                                  alt="Used White Casual Tee product image (1)">
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tile__description">
+                            <h3 class="tile__heading">
+                              Used White Casual Tee
+                            </h3>
+
+                            <p class="tile__prices">
+
+                              <span class="tile__price tile__price--original">
+                                ₹1,450
+                              </span>
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+
+                    </div>
+
+                    <div class="grid__column grid__column--6 grid__column--3@md">
+
+                      <div data-testid="product" class="product-tile">
+                        <a href="/products/senpai-embroidered-jacket-red" class="tile">
+                          <div class="tile__image">
+                            <div class="image image--background-color">
+                              <div class="image__badges">
+
+                              </div>
+
+                              <div class="image__object">
+
+                                <img
+                                  src="https://imgproxy.fourthwall.com/HNsjoV5V7dR1C9V1u4OVjuEvtK_4cCXQse-4_f_Yu8s/w:720/sm:1/enc/MjFlMjg1M2M1OTBm/NjA0OaXgsPM6z5dH/b2esaowubS7BAUTi/rsoONl_boYtgK0BF/mkgb8bS5Aq4mHKSq/9UL-nbGhNFfkoquD/wh2I_HQGlDaPwP9k/qr-NOPhbpEb32GNy/qIbatRKpxGVkQAC5/cguS2PtOLPdt-_q9/Q2YCxA4cLop9ikcy/8PzCXcvVyr8kGtvC/pj2HIANtukIl01Hh/w_QxXA.webp"
+                                  alt="Used Red Windbreaker Jacket product image (1)">
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tile__description">
+                            <h3 class="tile__heading">
+                              Used Red Windbreaker Jacket
+                            </h3>
+
+                            <p class="tile__prices">
+
+                              <span class="tile__price tile__price--original">
+                                ₹2,950
+                              </span>
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          </section>
+
+        </div>
       </div>
     </div>
 
-    <div class="hero-slider__nav-container">
-      <div class="hero-slider__nav" data-hero-slider="nav">
-
-
-
-
-          <div class="hero-slider__nav-item" data-hero-thumbnail>
-            <img
-              src="logo.jpg"
-              alt=""
-            >
-            <div class="hero-slider__nav-item-button" data-hero-autoplay-toggle></div>
-          </div>
-
-
-
-
-          <div class="hero-slider__nav-item" data-hero-thumbnail>
-            <img
-              src="1.jpeg" width="100"
-              alt=""
-            >
-            <div class="hero-slider__nav-item-button" data-hero-autoplay-toggle></div>
-          </div>
-
-
-
-
-          <div class="hero-slider__nav-item" data-hero-thumbnail>
-            <img
-              src="https://www.newszii.com/wp-content/uploads/2018/07/Best-Tech-Product-Every-Student.jpg"
-              alt=""
-            >
-            <div class="hero-slider__nav-item-button" data-hero-autoplay-toggle></div>
-          </div>
-
-
-
-
-          <div class="hero-slider__nav-item" data-hero-thumbnail>
-            <img
-              src="https://www.studentsshop.co.in/_next/image?url=https%3A%2F%2Fcdn.dotpe.in%2FkiranaStatic%2FPremium_Images%2FArt%2520%2526%2520Craft%2FArt%2520Craft%2520Web%2FJPEG%2Fwgth1.jpg&w=1920&q=75"
-              alt=""
-            >
-            <div class="hero-slider__nav-item-button" data-hero-autoplay-toggle></div>
-          </div>
-
-      </div>
-    </div>
   </div>
 
-  <div>
-    <button class="hero-slider__button-autoplay" data-hero-autoplay>toggle slider</button>
-  </div>
-</section>
+  <footer class="page__footer">
+    <div id="fw-section-footer" class="fw-section">
+      <div data-testid="main.single.section" class="footer">
+        <div class="wrapper">
+          <div class="footer__inner">
+            <div class="footer__top">
+              <div class="grid grid--middle">
+                <div class="grid__column grid__column--12">
+                  <a href="/" class="header__logo-link">
 
-</div><div id="fw-section-featured-collection-1711992078" class="fw-section">
+                    <div class="end">
+                      <center><img src="logo3.png" width="270x" srcset="logo3.png 2x" alt="ViSell" class="footer__image"
+                          itemprop="logo"></center>
+                    </div>
 
-<section data-section-id="fw-section-featured-collection-1711992078" data-testid="main.single.section" class="featured-collection featured-collection--fw-section-featured-collection-1711992078">
-  <div class="collection">
-    <div class="container wrapper">
-      <div class="collection__header">
-        <div class="section-header">
+                  </a>
+                </div>
 
-            <h2 class="section-header__heading">V</h2>
+                <div class="grid__column grid__column--12">
+                  <nav class="footer__nav">
+                    <ul class="footer__list footer__list--menu">
 
+                      <li class="footer__list-item">
+                        <a href="/pages/terms-of-service" class="footer__menu-link">Terms of Service</a>
+                      </li>
 
+                      <li class="footer__list-item">
+                        <a href="/pages/privacy-policy" class="footer__menu-link">Privacy Policy</a>
+                      </li>
 
-            <div class="section-header__cta">
-              <a href="" class="button button--outline button--small">
-                All Essentials
-              </a>
+                      <li class="footer__list-item">
+                        <a href="/pages/returns-faq" class="footer__menu-link">Returns & FAQ</a>
+                      </li>
+
+                    </ul>
+                  </nav>
+                </div>
+              </div>
             </div>
 
-        </div>
-      </div>
-
-      <div class="collection__grid">
-        <div class="grid grid--waffle grid--center">
-
-            <div class="grid__column grid__column--6 grid__column--3@md">
-
-
-<div data-testid="product" class="product-tile">
-  <a href="/products/cartographer-abyss" class="tile">
-    <div class="tile__image">
-      <div class="image image--background-color">
-        <div class="image__badges">
-
-
-
-
-
-        </div>
-
-        <div class="image__object">
-
-            <img
-              src="2.webp"
-              alt="Cartographer - Abyss product image (1)"
-            >
-
-        </div>
-      </div>
-    </div>
-
-    <div class="tile__description">
-      <h3 class="tile__heading">
-        Cartographer - Abyss
-      </h3>
-
-      <p class="tile__prices">
-
-
-        <span class="tile__price tile__price--original">
-          ₹1,450
-        </span>
-      </p>
-    </div>
-  </a>
-</div>
-
-            </div>
-
-            <div class="grid__column grid__column--6 grid__column--3@md">
-
-
-<div data-testid="product" class="product-tile">
-  <a href="/products/cartographer-ghost" class="tile">
-    <div class="tile__image">
-      <div class="image image--background-color">
-        <div class="image__badges">
-
-
-
-
-
-        </div>
-
-        <div class="image__object">
-
-            <img
-              src="4.webp"
-              alt="Cartographer - Ghost product image (1)"
-            >
-
-        </div>
-      </div>
-    </div>
-
-    <div class="tile__description">
-      <h3 class="tile__heading">
-        Cartographer - Ghost
-      </h3>
-
-      <p class="tile__prices">
-
-
-        <span class="tile__price tile__price--original">
-          ₹1,450
-        </span>
-      </p>
-    </div>
-  </a>
-</div>
-
-            </div>
-
-            <div class="grid__column grid__column--6 grid__column--3@md">
-
-
-<div data-testid="product" class="product-tile">
-  <a href="/products/sunrise" class="tile">
-    <div class="tile__image">
-      <div class="image image--background-color">
-        <div class="image__badges">
-
-
-
-
-
-        </div>
-
-        <div class="image__object">
-
-            <img
-              src="10.jpeg"
-              alt="Sunrise product image (1)"
-            >
-
-        </div>
-      </div>
-    </div>
-
-    <div class="tile__description">
-      <h3 class="tile__heading">
-        Sunrise
-      </h3>
-
-      <p class="tile__prices">
-
-
-        <span class="tile__price tile__price--original">
-          ₹1,450
-        </span>
-      </p>
-    </div>
-  </a>
-</div>
-
-            </div>
-
-            <div class="grid__column grid__column--6 grid__column--3@md">
-
-
-<div data-testid="product" class="product-tile">
-  <a href="/products/garden" class="tile">
-    <div class="tile__image">
-      <div class="image image--background-color">
-        <div class="image__badges">
-
-
-
-
-
-        </div>
-
-        <div class="image__object">
-
-            <img
-              src="7.jpeg"
-              alt="Garden product image (1)"
-            >
-
-        </div>
-      </div>
-    </div>
-
-    <div class="tile__description">
-      <h3 class="tile__heading">
-        Garden
-      </h3>
-
-      <p class="tile__prices">
-
-
-        <span class="tile__price tile__price--original">
-          ₹1,450
-        </span>
-      </p>
-    </div>
-  </a>
-</div>
-
-            </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-</div><div id="fw-section-featured-collection-0" class="fw-section">
-
-<section data-section-id="fw-section-featured-collection-0" data-testid="main.single.section" class="featured-collection featured-collection--fw-section-featured-collection-0">
-  <div class="collection">
-    <div class="container wrapper">
-      <div class="collection__header">
-        <div class="section-header">
-
-            <h2 class="section-header__heading">STUDENT ESSENTIALS - USED & SECOND-HAND</h2>
-
-
-
-        </div>
-      </div>
-
-      <div class="collection__grid">
-        <div class="grid grid--waffle grid--center">
-
-            <div class="grid__column grid__column--6 grid__column--3@md">
-
-
-<div data-testid="product" class="product-tile">
-  <a href="/products/the-vetruvian-waifu-sweatshirt" class="tile">
-    <div class="tile__image">
-      <div class="image image--background-color">
-        <div class="image__badges">
-
-
-
-
-
-        </div>
-
-        <div class="image__object">
-
-            <img
-              src="5.jpeg"
-              alt="The Vetruvian Waifu Sweatshirt product image (1)"
-            >
-
-        </div>
-      </div>
-    </div>
-
-    <div class="tile__description">
-      <h3 class="tile__heading">
-        Stick Files
-      </h3>
-
-      <p class="tile__prices">
-
-
-        <span class="tile__price tile__price--original">
-          ₹2,250
-        </span>
-      </p>
-    </div>
-  </a>
-</div>
-
-            </div>
-
-            <div class="grid__column grid__column--6 grid__column--3@md">
-
-
-<div data-testid="product" class="product-tile">
-  <a href="/products/the-vetruvian-waifu-long-sleeve" class="tile">
-    <div class="tile__image">
-      <div class="image image--background-color">
-        <div class="image__badges">
-
-
-
-
-
-        </div>
-
-        <div class="image__object">
-
-            <img
-              src="3.webp"
-              alt="The Vetruvian Waifu Long Sleeve product image (1)"
-            >
-
-        </div>
-      </div>
-    </div>
-
-    <div class="tile__description">
-      <h3 class="tile__heading">
-        The Vetruvian Waifu Long Sleeve
-      </h3>
-
-      <p class="tile__prices">
-
-
-        <span class="tile__price tile__price--original">
-          ₹1,450
-        </span>
-      </p>
-    </div>
-  </a>
-</div>
-
-            </div>
-
-            <div class="grid__column grid__column--6 grid__column--3@md">
-
-
-<div data-testid="product" class="product-tile">
-  <a href="/products/idiot-beanie" class="tile">
-    <div class="tile__image">
-      <div class="image image--background-color">
-        <div class="image__badges">
-
-
-
-
-
-        </div>
-
-        <div class="image__object">
-
-            <img
-              src="2.jpeg"
-              alt="Idiot Waffle Beanie product image (1)"
-            >
-
-        </div>
-      </div>
-    </div>
-
-    <div class="tile__description">
-      <h3 class="tile__heading">
-        Idiot Waffle Beanie
-      </h3>
-
-      <p class="tile__prices">
-
-
-        <span class="tile__price tile__price--original">
-          ₹1,250
-        </span>
-      </p>
-    </div>
-  </a>
-</div>
-
-            </div>
-
-            <div class="grid__column grid__column--6 grid__column--3@md">
-
-
-<div data-testid="product" class="product-tile">
-  <a href="/products/genius-beanie-2" class="tile">
-    <div class="tile__image">
-      <div class="image image--background-color">
-        <div class="image__badges">
-
-
-
-
-
-        </div>
-
-        <div class="image__object">
-
-            <img
-              src="1.jpeg" width="100"
-
-            >
-
-        </div>
-      </div>
-    </div>
-
-    <div class="tile__description">
-      <h3 class="tile__heading">
-        Genius Waffle Beanie
-      </h3>
-
-      <p class="tile__prices">
-
-
-        <span class="tile__price tile__price--original">
-          ₹1,250
-        </span>
-      </p>
-    </div>
-  </a>
-</div>
-
-            </div>
-
-            <div class="grid__column grid__column--6 grid__column--3@md">
-
-
-<div data-testid="product" class="product-tile">
-  <a href="" class="tile">
-    <div class="tile__image">
-      <div class="image image--background-color">
-        <div class="image__badges">
-
-
-
-
-
-        </div>
-
-        <div class="image__object">
-
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnwlcSONZ2bljriWN5mqaFOWM43qV0UYirAw&s"
-              alt="Used Warm Hoodie product image (1)"
-            >
-
-        </div>
-      </div>
-    </div>
-
-    <div class="tile__description">
-      <h3 class="tile__heading">
-        Used Warm Hoodie
-      </h3>
-
-      <p class="tile__prices">
-
-
-        <span class="tile__price tile__price--original">
-          ₹2,450
-        </span>
-      </p>
-    </div>
-  </a>
-</div>
-
-            </div>
-
-            <div class="grid__column grid__column--6 grid__column--3@md">
-
-
-<div data-testid="product" class="product-tile">
-  <a href="/products/notice-me-tee" class="tile">
-    <div class="tile__image">
-      <div class="image image--background-color">
-        <div class="image__badges">
-
-
-
-
-
-        </div>
-
-        <div class="image__object">
-
-            <img
-              src="https://imgproxy.fourthwall.com/Cav3gcD_ZSSwNpcrmRyy_AARFijkPTg9zyDwMVvTCV8/w:720/sm:1/enc/MWE0NDljMDQ1NWYw/NDg2Y3K67nCZ8zlc/x-AVdY6HKrK0iVjc/2j58uLbtjh1y7cud/5sJOfBV2chUON33h/IzanmTO4H9-2jsPF/li-RTOP5FAQlmcaE/Gqz-uAl5hcffRZpy/ZXZPy79QXSYGQzGn/Yxb-HnuVCxlk04I9/C6Z2eQxGHpXoI3hs/I3U5EU5yzTeqLI95/YL9RhgvcN5iOK-DN/4UmJUg.webp"
-              alt="Used College T-shirt product image (1)"
-            >
-
-        </div>
-      </div>
-    </div>
-
-    <div class="tile__description">
-      <h3 class="tile__heading">
-        Used College T-shirt
-      </h3>
-
-      <p class="tile__prices">
-
-
-        <span class="tile__price tile__price--original">
-          ₹1,450
-        </span>
-      </p>
-    </div>
-  </a>
-</div>
-
-            </div>
-
-            <div class="grid__column grid__column--6 grid__column--3@md">
-
-
-<div data-testid="product" class="product-tile">
-  <a href="/products/notice-me-hoodie-uwu-edition" class="tile">
-    <div class="tile__image">
-      <div class="image image--background-color">
-        <div class="image__badges">
-
-
-
-
-
-        </div>
-
-        <div class="image__object">
-
-            <img
-              src="https://imgproxy.fourthwall.com/hOEUcYiTZHX8zxOJcetwCtHbfdzAafkLn4G1Jd7KpEs/w:720/sm:1/enc/YWJjYWQwYzY4NGVm/MDRiOFSdus3MkrIx/AI9b1a9g7S_eOR0I/qKSvmOD2Z9XVVJqD/VOWWv-p9t-G6_D_M/DBoRINqKcPAlmFp4/Sr3DZ6fkiEsxW1xq/h0t4b7UqsmVULQya/i6KLVz5F7x5JEX9u/MANejggMtrrHH46n/fAsvehgf29IlKnOF/eQZMBslsyz7_G4tk/rkLQrjcPm0gNW8TH/Mflpuw.webp"
-              alt="Used Warm Hoodie - UWU Edition (Limited) product image (1)"
-            >
-
-        </div>
-      </div>
-    </div>
-
-    <div class="tile__description">
-      <h3 class="tile__heading">
-        Used Warm Hoodie - UWU Edition (Limited)
-      </h3>
-
-      <p class="tile__prices">
-
-
-        <span class="tile__price tile__price--original">
-          ₹2,950
-        </span>
-      </p>
-    </div>
-  </a>
-</div>
-
-            </div>
-
-            <div class="grid__column grid__column--6 grid__column--3@md">
-
-
-<div data-testid="product" class="product-tile">
-  <a href="/products/streambeats-embroidered-hoodie" class="tile">
-    <div class="tile__image">
-      <div class="image image--background-color">
-        <div class="image__badges">
-
-
-
-
-
-        </div>
-
-        <div class="image__object">
-
-            <img
-              src="https://imgproxy.fourthwall.com/WQfpDQ32RdNV7hBC5qLY3zGYTlalsIGpzb9Aa3T1Gfc/w:720/sm:1/enc/OTU1M2RmYzBmMDVh/YWFkY6Ga2dlx5mFV/F4_8G_2osuQ8bwgY/lBvcxeFUhlJIm_2b/L2EWYj9k3cphwbcp/EXr_4033MYkvcqeb/CZIbzhTbqODIUiOd/Edf3tbXnqlGpNqv_/tCCRWm9QX_ohuHc9/RE1LQ2f0bkXb_Hu2/OUD7Slqd1huPUz80/ruHRz9br0X4Bf1qc/o-Hn7ii28lT2klh5/Saqbww.webp"
-              alt="StreamBeats Embroidered Hoodie product image (1)"
-            >
-
-        </div>
-      </div>
-    </div>
-
-    <div class="tile__description">
-      <h3 class="tile__heading">
-        StreamBeats Embroidered Hoodie
-      </h3>
-
-      <p class="tile__prices">
-
-
-        <span class="tile__price tile__price--original">
-          ₹2,950
-        </span>
-      </p>
-    </div>
-  </a>
-</div>
-
-            </div>
-
-            <div class="grid__column grid__column--6 grid__column--3@md">
-
-
-<div data-testid="product" class="product-tile">
-  <a href="/products/streambeats-embroidered-tee" class="tile">
-    <div class="tile__image">
-      <div class="image image--background-color">
-        <div class="image__badges">
-
-
-
-
-
-        </div>
-
-        <div class="image__object">
-
-            <img
-              src="https://imgproxy.fourthwall.com/GzZl2Zko64eAbt3_78VEt33UxpB1fYmXpw_Mbfy7NJc/w:720/sm:1/enc/YjI4OWRhNTcxMzBi/YzlkN0HqW2HfQyTo/L_OtS1j5IO-rWIhQ/YikbXBSIy7f9n9tT/BSl5iF5wVAw3Y5yB/FeSjaSD9GVeK9Jvo/LN_pA3k8YAl8f9yT/xcZ096J0PY2x8jmD/eV7nsgPOZfChFt_6/DM3F_L2vH0aocYws/P40Cps27KEi9k8OE/1CNLMs0o0Pz9cdW7/dAzGSRPCX4w5W0oz/BAHLyQ.webp"
-              alt="StreamBeats Embroidered Tee product image (1)"
-            >
-
-        </div>
-      </div>
-    </div>
-
-    <div class="tile__description">
-      <h3 class="tile__heading">
-        StreamBeats Embroidered Tee
-      </h3>
-
-      <p class="tile__prices">
-
-
-        <span class="tile__price tile__price--original">
-          ₹1,450
-        </span>
-      </p>
-    </div>
-  </a>
-</div>
-
-            </div>
-
-            <div class="grid__column grid__column--6 grid__column--3@md">
-
-
-<div data-testid="product" class="product-tile">
-  <a href="/products/senpai-black-tee" class="tile">
-    <div class="tile__image">
-      <div class="image image--background-color">
-        <div class="image__badges">
-
-
-
-
-
-        </div>
-
-        <div class="image__object">
-
-            <img
-              src="https://imgproxy.fourthwall.com/Ws5WcIHL-YC1URfVv2B24l314fQMoqOMoM9nDzli8d8/w:720/sm:1/enc/OGIzMWYxYTQ0NmE3/MjExOA6yfyPZfZ_w/f5I-5dMt0gPdWBSc/17pLtXQp_CT2E835/MA4EWWOLe3nAy8Px/QHamrKyJtOsMLrEk/sor5W5AlaM1k1VWM/fUeRsl1vmlXEUWIG/WjVeV9qluCOGc53J/dJtdROevVCRGhUu5/mcoqdomYdsSL1eRr/nd9hDlcfTTloqleO/GmfnQMhw1kxGmLyt/TlUV_Q.webp"
-              alt="Used Black Casual Tee product image (1)"
-            >
-
-        </div>
-      </div>
-    </div>
-
-    <div class="tile__description">
-      <h3 class="tile__heading">
-        Used Black Casual Tee
-      </h3>
-
-      <p class="tile__prices">
-
-
-        <span class="tile__price tile__price--original">
-          ₹1,450
-        </span>
-      </p>
-    </div>
-  </a>
-</div>
-
-            </div>
-
-            <div class="grid__column grid__column--6 grid__column--3@md">
-
-
-<div data-testid="product" class="product-tile">
-  <a href="/products/senpai-white-tee" class="tile">
-    <div class="tile__image">
-      <div class="image image--background-color">
-        <div class="image__badges">
-
-
-
-
-
-        </div>
-
-        <div class="image__object">
-
-            <img
-              src="https://imgproxy.fourthwall.com/zk0SoJHFIFbodsZfFm3tfmyycNEwDNwmT33RgF1LOCA/w:720/sm:1/enc/NTJiOTU4NWVkZGVi/MmJhNohZBvhgWBw-/HxszVCkjBw-aO8jY/NbQ1f1WkR68IDrdQ/94avB4lgwnwTrqoo/ERVnNcniMjYlm5Bl/Rg95-0bwaUMwHVPa/PJ22Ewww6dFEEoOP/lg4X_KXiRWPjQS3S/S73xbl7WdcS94Kxz/EqC1NCVZui-RgwAH/Am0xWtUCRUYt0PmT/t-O5rilLo-v2ASeB/lxJmkQ.webp"
-              alt="Used White Casual Tee product image (1)"
-            >
-
-        </div>
-      </div>
-    </div>
-
-    <div class="tile__description">
-      <h3 class="tile__heading">
-        Used White Casual Tee
-      </h3>
-
-      <p class="tile__prices">
-
-
-        <span class="tile__price tile__price--original">
-          ₹1,450
-        </span>
-      </p>
-    </div>
-  </a>
-</div>
-
-            </div>
-
-            <div class="grid__column grid__column--6 grid__column--3@md">
-
-
-<div data-testid="product" class="product-tile">
-  <a href="/products/senpai-embroidered-jacket-red" class="tile">
-    <div class="tile__image">
-      <div class="image image--background-color">
-        <div class="image__badges">
-
-
-
-
-
-        </div>
-
-        <div class="image__object">
-
-            <img
-              src="https://imgproxy.fourthwall.com/HNsjoV5V7dR1C9V1u4OVjuEvtK_4cCXQse-4_f_Yu8s/w:720/sm:1/enc/MjFlMjg1M2M1OTBm/NjA0OaXgsPM6z5dH/b2esaowubS7BAUTi/rsoONl_boYtgK0BF/mkgb8bS5Aq4mHKSq/9UL-nbGhNFfkoquD/wh2I_HQGlDaPwP9k/qr-NOPhbpEb32GNy/qIbatRKpxGVkQAC5/cguS2PtOLPdt-_q9/Q2YCxA4cLop9ikcy/8PzCXcvVyr8kGtvC/pj2HIANtukIl01Hh/w_QxXA.webp"
-              alt="Used Red Windbreaker Jacket product image (1)"
-            >
-
-        </div>
-      </div>
-    </div>
-
-    <div class="tile__description">
-      <h3 class="tile__heading">
-        Used Red Windbreaker Jacket
-      </h3>
-
-      <p class="tile__prices">
-
-
-        <span class="tile__price tile__price--original">
-          ₹2,950
-        </span>
-      </p>
-    </div>
-  </a>
-</div>
-
-            </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-</section>
-
-</div>
-  </div>
-</div>
-
-      </div>
-
-      <footer class="page__footer">
-        <div id="fw-section-footer" class="fw-section">
-<div data-testid="main.single.section" class="footer">
-  <div class="wrapper">
-    <div class="footer__inner">
-      <div class="footer__top">
-        <div class="grid grid--middle">
-          <div class="grid__column grid__column--12">
-            <a href="/" class="header__logo-link">
-
-<div class="end">
-    <center><img
-    src="logo.jpg"
-    width="270x"
-    srcset="logo.jpg 2x"
-    alt="ViSell"
-    class="footer__image"
-    itemprop="logo"
-  ></center>
-  </div>
-
-
-            </a>
-          </div>
-
-          <div class="grid__column grid__column--12">
-            <nav class="footer__nav">
-              <ul class="footer__list footer__list--menu">
-
-
-
-                  <li class="footer__list-item">
-                    <a href="/pages/terms-of-service" class="footer__menu-link">Terms of Service</a>
-                  </li>
-
-                  <li class="footer__list-item">
-                    <a href="/pages/privacy-policy" class="footer__menu-link">Privacy Policy</a>
-                  </li>
-
-                  <li class="footer__list-item">
-                    <a href="/pages/returns-faq" class="footer__menu-link">Returns & FAQ</a>
-                  </li>
+            <div class="footer__bottom">
+              <ul class="footer__list footer__list--bottom">
+                <li class="footer__list-item">
+                  <div class="footer__copy">&copy; 2024 ViSell</div>
+                </li>
 
               </ul>
-            </nav>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="footer__bottom">
-        <ul class="footer__list footer__list--bottom">
-          <li class="footer__list-item">
-            <div class="footer__copy">&copy; 2024 ViSell</div>
-          </li>
-
-
-        </ul>
-      </div>
     </div>
+  </footer>
   </div>
-</div>
-</div>
-      </footer>
-    </div>
 
-    <script>
-  var fourthwallTheme = {
-    strings: {
-      addToCart: "Add to Cart",
-      redeemGift: "Redeem Your Gift",
-      viewCart: "View Cart",
-      checkout: "Checkout",
-      outOfStock: "Out of Stock",
-      unavailable: "Not Available",
-      soldOut: "Sold Out",
-      soldOutSuffix: " - Sold Out",
-      missingQuantityError: "Please choose the quantity.",
-      generalError: "An error occurred. Please try refreshing the page.",
-      item: "item",
-      items: "items",
-      startShopping: "Start Shopping",
-      subtotal: "Subtotal",
-      backToShopping: "Back to Shopping",
-      cart: {
-        heading: "[item_count] [item_count_label] in your cart for [total]",
-        emptyHeading: "Your Shopping Cart is Empty",
-        tableHeader: {
-          item: "Item",
-          quantity: "Quantity",
-          price: "Price"
+  <script>
+    var fourthwallTheme = {
+      strings: {
+        addToCart: "Add to Cart",
+        redeemGift: "Redeem Your Gift",
+        viewCart: "View Cart",
+        checkout: "Checkout",
+        outOfStock: "Out of Stock",
+        unavailable: "Not Available",
+        soldOut: "Sold Out",
+        soldOutSuffix: " - Sold Out",
+        missingQuantityError: "Please choose the quantity.",
+        generalError: "An error occurred. Please try refreshing the page.",
+        item: "item",
+        items: "items",
+        startShopping: "Start Shopping",
+        subtotal: "Subtotal",
+        backToShopping: "Back to Shopping",
+        cart: {
+          heading: "[item_count] [item_count_label] in your cart for [total]",
+          emptyHeading: "Your Shopping Cart is Empty",
+          tableHeader: {
+            item: "Item",
+            quantity: "Quantity",
+            price: "Price"
+          },
+          deleteModal: {
+            heading: "Are you sure you want to remove [title] from your cart?",
+            cancel: "Cancel",
+            delete: "Delete"
+          }
         },
-        deleteModal: {
-          heading: "Are you sure you want to remove [title] from your cart?",
-          cancel: "Cancel",
-          delete: "Delete"
+        newsletter: {
+          missingEmailError: "Please enter your email.",
+          invalidEmailError: "Please enter a valid email."
+        },
+        donation: {
+          missingAmountError: "Please select or enter the donation amount.",
+          invalidAmountError: "Please enter a valid donation amount.",
+          missingNameError: "Please enter your name.",
+          missingMessageError: "Please enter the message."
         }
       },
-      newsletter: {
-        missingEmailError: "Please enter your email.",
-        invalidEmailError: "Please enter a valid email."
-      },
-      donation: {
-        missingAmountError: "Please select or enter the donation amount.",
-        invalidAmountError: "Please enter a valid donation amount.",
-        missingNameError: "Please enter your name.",
-        missingMessageError: "Please enter the message."
+      urls: {
+        cart: "/cart",
+        cartItemLocalizedPrefix: "",
+        cartAddUrl: "/cart/add",
+        cartChangeUrl: "/cart/change",
+        allProductsCollection: "/collections/all",
       }
-    },
-    urls: {
-      cart: "/cart",
-      cartItemLocalizedPrefix: "",
-      cartAddUrl: "/cart/add",
-      cartChangeUrl: "/cart/change",
-      allProductsCollection: "/collections/all",
-    }
-  };
-</script>
+    };
+  </script>
 
-    <script src="https://themes.fourthwall.com/themes-library/assets/10904437-9bc2-4971-a129-aceb423943aa/assets/theme.js?v=bef96bfc98b002bf0c961de3ea10d22a" rel="preload"></script>
+  <script
+    src="https://themes.fourthwall.com/themes-library/assets/10904437-9bc2-4971-a129-aceb423943aa/assets/theme.js?v=bef96bfc98b002bf0c961de3ea10d22a"
+    rel="preload"></script>
 
-    <script src="https://cdn.fourthwall.com/web-perf/instant.js" defer></script>
+  <script src="https://cdn.fourthwall.com/web-perf/instant.js" defer></script>
 
 </body>
+
 </html>
