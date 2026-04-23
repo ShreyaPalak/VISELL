@@ -19,6 +19,9 @@
     media="all" />
   <link rel="preconnect" href="https://imgproxy.fourthwall.com" crossorigin />
   <link rel="preconnect" href="https://storage.googleapis.com" crossorigin />
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js"></script>
 </head>
 
 <body>
@@ -34,6 +37,7 @@
       <li><a href="#cart">Cart</a></li>
       <li><a href="#contact">Contact Us</a></li>
       <li><a href="login.html" class="login-link">Login</a></li>
+      <li><a href="admin.html" class="admin-link" style="background-color: #06db71;">Sell</a></li>
     </ul>
     <div class="search-bar">
       <div class="search-icon">
@@ -359,9 +363,10 @@
                 </div>
 
                 <div class="collection__grid">
-                  <div class="grid grid--waffle grid--center">
-
-                    <div class="grid__column grid__column--6 grid__column--3@md">
+                  <div class="grid grid--waffle grid--center" id="productsContainer">
+                    <!-- Products will be loaded here dynamically -->
+                  </div>
+                </div>
 
                       <div data-testid="product" class="product-tile">
                         <a href="/products/the-vetruvian-waifu-sweatshirt" class="tile">

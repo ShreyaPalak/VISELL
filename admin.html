@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISELL - Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .admin-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .admin-container h1 {
+            color: #0c4891;
+            text-align: center;
+        }
+        .form-group {
+            margin: 15px 0;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #0c4891;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #073567;
+        }
+        .success-message {
+            color: #04AA6D;
+            text-align: center;
+            margin-top: 20px;
+            display: none;
+        }
+        .error-message {
+            color: #d32f2f;
+            text-align: center;
+            margin-top: 20px;
+            display: none;
+        }
+        .back-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .back-link a {
+            color: #0c4891;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar navbar--logo-only">
+        <a class="navbar__brand" href="vis3ll2.html" aria-label="ViSell Home">
+            <img class="navbar__logo" src="logo3.png" alt="ViSell Logo" />
+        </a>
+    </div>
+
+    <div class="admin-container">
+        <h1>Add Product to ViSell</h1>
+        
+        <form id="productForm">
+            <div class="form-group">
+                <label for="productName">Product Name *</label>
+                <input type="text" id="productName" name="productName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="productPrice">Price (₹) *</label>
+                <input type="number" id="productPrice" name="productPrice" step="10" required>
+            </div>
+
+            <div class="form-group">
+                <label for="productCategory">Category *</label>
+                <select id="productCategory" name="productCategory" required>
+                    <option value="">Select Category</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Books">Books</option>
+                    <option value="Clothing">Clothing</option>
+                    <option value="Furniture">Furniture</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="productDescription">Description</label>
+                <textarea id="productDescription" name="productDescription" placeholder="Describe the product condition, features, etc."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="productImage">Image URL *</label>
+                <input type="url" id="productImage" name="productImage" placeholder="https://example.com/image.jpg" required>
+            </div>
+
+            <div class="form-group">
+                <label for="sellerName">Your Name *</label>
+                <input type="text" id="sellerName" name="sellerName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="sellerEmail">Your Email *</label>
+                <input type="email" id="sellerEmail" name="sellerEmail" required>
+            </div>
+
+            <button type="submit">Add Product</button>
+        </form>
+
+        <div class="success-message" id="successMsg">✓ Product added successfully!</div>
+        <div class="error-message" id="errorMsg"></div>
+
+        <div class="back-link">
+            <a href="vis3ll2.html">← Back to Home</a>
+        </div>
+    </div>
+
+    <!-- Firebase Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js"></script>
+    <script src="firebase-config.js"></script>
+
+    <script>
+        const form = document.getElementById('productForm');
+        const successMsg = document.getElementById('successMsg');
+        const errorMsg = document.getElementById('errorMsg');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            try {
+                // Get form data
+                const productData = {
+                    name: document.getElementById('productName').value,
+                    price: parseInt(document.getElementById('productPrice').value),
+                    category: document.getElementById('productCategory').value,
+                    description: document.getElementById('productDescription').value,
+                    image: document.getElementById('productImage').value,
+                    sellerName: document.getElementById('sellerName').value,
+                    sellerEmail: document.getElementById('sellerEmail').value,
+                    createdAt: new Date(),
+                    available: true
+                };
+
+                // Add to Firebase
+                await db.collection('products').add(productData);
+
+                // Show success message
+                successMsg.style.display = 'block';
+                form.reset();
+                errorMsg.style.display = 'none';
+
+                // Hide success message after 3 seconds
+                setTimeout(() => {
+                    successMsg.style.display = 'none';
+                }, 3000);
+
+            } catch (error) {
+                errorMsg.textContent = 'Error: ' + error.message;
+                errorMsg.style.display = 'block';
+                console.error('Error adding product:', error);
+            }
+        });
+    </script>
+</body>
+</html>
